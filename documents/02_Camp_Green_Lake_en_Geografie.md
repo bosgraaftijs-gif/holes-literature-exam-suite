@@ -1,0 +1,152 @@
+# Camp Green Lake – Geschiedenis, Geografie, Regels en Woestijnfauna
+
+Camp Green Lake is het centrale toneel van Louis Sachars *Holes*. Het is een plek vol paradoxen: er is geen meer, het is er allesbehalve groen, en het zogenaamde "zomerkamp" is in werkelijkheid een meedogenloos strafkamp. Dit document biedt een grondige geografische, historische en ecologische analyse van Camp Green Lake en de omliggende Texaanse woestijn.
+
+---
+
+## Inhoudsopgave
+1. [De Geschiedenis van Green Lake, Texas](#de-geschiedenis-van-green-lake-texas)
+   - [Het Bloeiende Meerstadje van de 19e Eeuw](#het-bloeiende-meerstadje-van-de-19e-eeuw)
+   - [De Tragedie en de Droogte van 110 Jaar](#de-tragedie-en-de-droogte-van-110-jaar)
+2. [Camp Green Lake als Jeugddetentiecentrum](#camp-green-lake-als-jeugddetentiecentrum)
+   - [Doelstelling: Karaktervorming vs. Dwangarbeid](#doelstelling-karaktervorming-vs-dwangarbeid)
+   - [De Meedogenloze Kampregels en het Graafregime](#de-meedogenloze-kampregels-en-het-graafregime)
+   - [De Dagelijkse Routine](#de-dagelijkse-routine)
+3. [Plattegrond en Belangrijke Locaties van het Kamp](#plattegrond-en-belangrijke-locaties-van-het-kamp)
+   - [Tent D en de Kampeertenten](#tent-d-en-de-kampeertenten)
+   - [The Wreck Room (De Ontspanningsruimte)](#the-wreck-room-de-ontspanningsruimte)
+   - [Het Huis en Kantoor van The Warden](#het-huis-en-kantoor-van-the-warden)
+   - [De Twee Eiken en de Schaduw](#de-twee-eiken-en-de-schaduw)
+4. [Flora en Fauna van de Woestijn](#flora-en-fauna-van-de-woestijn)
+   - [De Gele Gevlekte Hagedis (*Yellow-Spotted Lizard*)](#de-gele-gevlekte-hagedis-yellow-spotted-lizard)
+   - [Ratelslangen en Schorpioenen](#ratelslangen-en-schorpioenen)
+   - [Wilde Uien (*Allium*)](#wilde-uien-allium)
+5. [Sleutellocaties in de Omliggende Woestijn](#sleutellocaties-in-de-omliggende-woestijn)
+   - [Het Gatenveld (De Oude Meerbodem)](#het-gatenveld-de-oude-meerbodem)
+   - [Het Wrak van Mary Lou](#het-wrak-van-mary-lou)
+   - [God's Thumb (Big Thumb Mountain)](#gods-thumb-big-thumb-mountain)
+
+---
+
+## De Geschiedenis van Green Lake, Texas
+
+![Camp Green Lake Meerbodem](assets/camp_green_lake_dry_lake.jpg)
+*De uitgestrekte, uitgedroogde zoutvlakte van wat ooit het grootste zoetwatermeer van Texas was.*
+
+### Het Bloeiende Meerstadje van de 19e Eeuw
+In de late negentiende eeuw (circa 1880–1888) was Green Lake een welvarend, idyllisch stadje gelegen aan de oevers van het grootste natuurlijke zoetwatermeer van de staat Texas. Het water was kristalhelder en werd omzoomd door honderden bloeiende perzikboomgaarden. 
+
+Elk voorjaar vulde de lucht zich met de geur van perzikbloesem en organiseerde het stadje een picknick waarbij de bewoners streden om wie de lekkerste gerechten maakte. Katherine Barlow won jaar na jaar de eerste prijs met haar befaamde gekruide perziken (*spiced peaches*), ingemaakt met kaneel en kruidnagel. De economie floreerde dankzij de visserij, perzikteelt en het handelsverkeer over het water. De rijke familie Walker bezat grote lappen grond en Charles "Trout" Walker pronkte met zijn nieuwe gemotoriseerde stoomboot.
+
+### De Tragedie en de Droogte van 110 Jaar
+Het noodlot van Green Lake werd bezegeld door rassenhaat en geweld. Toen dorpsonderwijzeres Katherine Barlow verliefd werd op Sam, een zwarte uienverkoper, werd hun relatie als taboe beschouwd door de witte dorpsgemeenschap. Na een intieme zoen tussen de twee zette Trout Walker de dorpsbewoners aan tot een lynchpartij. De school werd platgebrand en Sam werd op het meer in koelen bloede doodgeschoten in zijn roeiboot.
+
+Vanaf die dag voltrok zich een ogenschijnlijk bovennatuurlijke straf: **er viel geen enkele druppel regen meer op Green Lake**. Gedurende precies honderdtien jaar bleef de hemel strakblauw en droog. Het gigantische meer verdampte geleidelijk totdat er slechts een kurkdroge, gebarsten zoutpan overbleef. De perzikbomen stierven af, de huizen vervielen tot ruïnes en de bewoners trokken weg. Het welvarende Green Lake veranderde in een spookstad midden in een meedogenloze woestijn.
+
+---
+
+## Camp Green Lake als Jeugddetentiecentrum
+
+![Camp Green Lake Bord](assets/camp_green_lake_sign.png)
+*Het officiële toegangsbord tot Camp Green Lake.*
+
+### Doelstelling: Karaktervorming vs. Dwangarbeid
+In de twintigste eeuw zag de familie Walker kans om munt te slaan uit de desolate woestenij. Louise Walker (The Warden) stichtte op het landgoed van haar voorouders een strafkamp voor minderjarige jongens die met Justitie in aanraking waren gekomen. 
+
+Officieel presenteerde het kamp zich aan rechters en de buitenwereld als een progressief heropvoedingsprogramma:
+> *"Als je een slechte jongen elke dag een gat laat graven in de brandende zon, verandert hij vanzelf in een goede jongen. Dat noemt men karaktervorming."*
+
+In werkelijkheid was deze "karaktervorming" een sinistere dekmantel. The Warden gaf niets om heropvoeding. Zij zocht wanhopig naar de verloren schat van Kissin' Kate Barlow, waarvan haar familie wist dat die ergens op de droge meerbodem begraven lag. Door tientallen jongens dag in dag uit systematisch gaten te laten graven, liet ze het zand omspitten zonder een cent aan arbeiders te hoeven betalen.
+
+![Kampeerders aan het graven](assets/camp_green_lake_campers.jpg)
+*Kampeerders zwoegen in de brandende hitte om hun dagelijkse gat te voltooien.*
+
+### De Meedogenloze Kampregels en het Graafregime
+Het leven in Camp Green Lake werd beheerst door ijzeren wetten:
+1. **De Maat van het Gat**: Elke jongen moet elke dag één gat graven. Het gat moet precies zo diep zijn als de schep lang is (5 voet / 1,52 meter) en een diameter hebben van eveneens 5 voet in elke richting. De schep dient als meetlat.
+2. **Geen Bewakers met Geweren Nodig**: Er staan geen hekken of prikkeldraad rond het kamp. Zoals Mr. Sir uitlegt: *"We hebben geen hekken nodig. We hebben de enige waterbron binnen een straal van honderd mijl. Als je wilt ontsnappen, ga je gang. Binnen drie dagen ben je gierenvoer."*
+3. **Beloning voor Vondsten**: Als een jongen iets "interessants" vindt tijdens het graven, moet hij dit onmiddellijk melden aan de leiding. Als The Warden de vondst goedkeurt, krijgt de vinder de rest van de dag vrij en een dubbele douchebeurt.
+4. **Waterrantsoen**: De waterwagen komt een paar keer per dag langs. Wie te laat is of uit de gratie valt bij Mr. Sir, krijgt niets.
+
+### De Dagelijkse Routine
+- **04:30 AM**: De wekker gaat. De jongens moeten opstaan terwijl het nog aardedonker en koel is.
+- **05:00 AM**: Ontbijt in de eetzaal (vaak flauwe pap of droge toast).
+- **05:30 AM**: Vertrek naar het gatenveld met schep en watercantine. De jongens beginnen direct te hakken in de keiharde toplaag van de opgedroogde klei.
+- **Ochtend**: Het graven is een race tegen de zon. Zodra de zon opkomt, stijgt de temperatuur snel tot boven de 40 graden Celsius in de schaduw (als er al schaduw zou zijn).
+- **Middag**: De jongens die klaar zijn, steken hun schep rechtop in hun hoop aarde en lopen terug naar het kamp voor een douche van exact 4 minuten met koud water.
+
+---
+
+## Plattegrond en Belangrijke Locaties van het Kamp
+
+### Tent D en de Kampeertenten
+Het kamp telt zes grote legertenten, aangeduid met letters A t/m F. Elke tent huisvest circa zeven jongens onder leiding van een counselor. 
+- **Tent D** is het verblijf van Stanley Yelnats IV, Zero, X-Ray, Armpit, Magnet, Zigzag en Squid.
+- De tenten staan op houten vlonders en bevatten eenvoudige veldbedden met dunne matrassen. Binnen is het benauwd en stoffig; er is geen privacy.
+
+### The Wreck Room (De Ontspanningsruimte)
+De centrale verzamelruimte voor de jongens buiten werktijd. Het meubilair is zwaar beschadigd: de stoelen missen poten, de pooltafel heeft gescheurd laken en er staat een kapotte televisie waar nooit een beeld op verschijnt. De muren zijn volgekalkt met graffiti en namen van eerdere gevangenen.
+
+### Het Huis en Kantoor van The Warden
+Een houten landhuis met airconditioning, afgesloten van het gewone kampterrein. Hier woont Louise Walker in relatieve luxe. In haar kantoor bewaart ze haar persoonlijke documenten, de dossiers van de kampeerders, en haar collectie make-up en chemicaliën, waaronder haar flesje nagellak met ratelslangengif.
+
+### De Twee Eiken en de Schaduw
+Vlakbij het kantoor van The Warden staan twee grote, oude eikenbomen. Dit zijn de **enige bomen** en de **enige natuurlijke schaduwplek** op het hele kampterrein. Tussen de twee bomen hangt een hangmat.
+- **Strikte Regel**: De hangmat en de schaduw onder de eiken zijn exclusief gereserveerd voor The Warden. Kampeerders mogen onder geen beding in de schaduw van de bomen komen; wie dit waagt, riskeert direct te worden beschoten door bewakers met jachtgeweren.
+
+---
+
+## Flora en Fauna van de Woestijn
+
+![Gele Gevlekte Hagedis](assets/yellow_spotted_lizard.jpg)
+*De Yellow-Spotted Lizard – het dodelijkste dier van Camp Green Lake.*
+
+### De Gele Gevlekte Hagedis (*Yellow-Spotted Lizard*)
+Het meest gevreesde wezen in de regio rond Green Lake is de gele vlekkenhagedis.
+
+#### Biologische Kenmerken
+- **Lengte**: Ongeveer 15 tot 25 centimeter lang.
+- **Vlekken**: Precies **11 gele vlekken** op een groenachtig-geel lichaam. Het gezegde luidt: *"Als je dichtbij genoeg bent om zijn 11 vlekken te tellen, ben je al dood."*
+- **Kop en Bek**: Heldergele ogen met felrode oogranden, een melkwitte tong, en vlijmscherpe zwarte tanden.
+- **Leefgebied**: Ze leven in diepe, donkere gaten onder de grond waar het koel is en jagen op zonnebloempitten, insecten en kleine knaagdieren. Ze houden van schaduw en nestelen zich daarom graag in pas gegraven gaten.
+
+#### Het Dodelijkste Gif
+De beet van een gele vlekkenhagedis is **100% fataal**. Er bestaat geen bekend tegengif. Het gif werkt langzaam maar veroorzaakt ondraaglijke pijn, hallucinaties en een zekere dood. 
+
+#### De Grote Zwakte: Uienbloed
+De hagedissen hebben een intense, instinctieve afkeer van **uien**. Wanneer een mens grote hoeveelheden uien eet, absorbeert het bloed de sterke zwavelverbindingen en geuren van de ui. De hagedissen weigeren iemand met "uienbloed" te bijten. Deze kennis redde in de 19e eeuw de uieneters van Sam, en redt later het leven van Stanley en Zero wanneer ze urenlang bedekt met tientallen hagedissen in een diep gat moeten staan.
+
+---
+
+### Ratelslangen en Schorpioenen
+![Ratelslang](assets/rattlesnake.jpg)
+*De prairie-ratelslang, veelvoorkomend in de gatenvelden rond het kamp.*
+
+Naast de hagedissen krioelt de zoutvlakte van schorpioenen en ratelslangen. De kampleiding stelt de kampeerders gerust met een lugubere geruststelling:
+> *"Als je gebeten wordt door een schorpioen of ratelslang, ga je niet dood. Je zult een paar dagen doodziek in je bed liggen met koorts en pijn, maar je overleeft het. Maar als een gele vlekkenhagedis je bijt, hoef je niet eens meer naar het ziekenhuis te gaan."*
+
+### Wilde Uien (*Allium*)
+Op de afgelegen berg God's Thumb groeit een unieke soort zoete, wilde bergknoflook en uien. Deze planten danken hun bestaan aan de natuurlijke zoetwaterbron die bovenop de berg ontspringt. De uien zijn rijk aan vocht, suikers en vitaminen, en vormen de enige voedselbron voor Stanley en Zero tijdens hun overlevingstocht.
+
+---
+
+## Sleutellocaties in de Omliggende Woestijn
+
+### Het Gatenveld (De Oude Meerbodem)
+Zover het oog reikt is de opgedroogde meerbodem bezaaid met tienduizenden gaten. Vanuit de lucht ziet het landschap eruit als het oppervlak van de maan: een eindeloze vlakte vol kraters en zandhopen.
+
+### Het Wrak van Mary Lou
+![Boot Mary Lou](assets/mary_lou_boat.png)
+*Het omgekeerde wrak van Sam's houten roeiboot Mary Lou op de droge meerbodem.*
+
+Midden in de zoutwoestijn, kilometers verwijderd van het kamp, ligt het omgekeerde wrak van een houten roeiboot half begraven onder het zand. Op de boeg staat nog vaag de naam **Mary Lou** geschilderd.
+- Onder de romp ontstaat een schaduwrijke holte waar Zero beschutting zoekt tegen de dodelijke middagzon.
+- In de modder onder de boot vindt Zero kratten met 110 jaar oude glazen weckpotten gevuld met Katherine Barlow's perzikjam ("Sploosh"), die door de conserveermiddelen en suikers drinkbaar is gebleven en hem in leven houdt.
+
+### God's Thumb (Big Thumb Mountain)
+![God's Thumb](assets/gods_thumb.jpg)
+*De markante rotsformatie 'God's Thumb' aan de horizon van Green Lake.*
+
+Aan de uiterste rand van de vallei torent een eenzame bergtop boven het landschap uit. De top van de rotsformatie heeft de opvallende vorm van een gigantische opgestoken duim die naar de hemel wijst.
+- **De Oorsprong van de Naam**: Stanley Yelnats I beweerde na zijn beroving door Kissin' Kate Barlow dat hij had overleefd door toevlucht te zoeken op "God's Thumb".
+- **De Fysieke Realiteit**: Bovenop de berg bevindt zich een verborgen oase: een zuivere zoetwaterstroom die tussen de rotsen borrelt en een weelderige weide met wilde uien voedt (oorspronkelijk gecultiveerd door Sam de uienman). Het is de plek waar Stanley en Zero fysiek en spiritueel genezen en waar de vloek definitief wordt opgeheven.

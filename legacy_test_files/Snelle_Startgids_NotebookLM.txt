@@ -1,0 +1,26 @@
+SNELLE STARTGIDS NOTEBOOKLM
+
+Welkom bij je eigen persoonlijke NotebookLM omgeving!
+
+Dit project is ontworpen om al je bronnen, artikelen, lesstof en aantekeningen centraal op te slaan als overzichtelijke .md of .txt bestanden.
+
+HOOFDFUNCTIES VAN DIT SYSTEEM:
+
+1. Automatische Inname en Conversie:
+Elk bestand dat je aanbiedt (PDF, Word, HTML, tekst, afbeeldingen of data) wordt automatisch omgezet naar schone Markdown (.md) of Platte Tekst (.txt).
+Afbeeldingen worden bewaard in de map documents/assets/ en direct gekoppeld in je notities.
+
+2. De Automatische Inbox Map:
+Je kunt bestanden op elk moment slepen naar de map inbox/. De actieve achtergrond-watcher pikt ze direct op en verwerkt ze automatisch.
+
+3. NotebookLM Studio:
+- Automatische samenvattingen in 4 verschillende stijlen (executive, bullets, diepgaand, tldr).
+- Interactieve quizzen met directe feedback, uitleg en score bijhouden.
+- Flitskaarten (flashcards) met 3D omdraai-animatie en voortgangsbewaking.
+- Uitgebreide studiegidsen en FAQ's.
+- Audio Podcast Overzicht met twee virtuele presentatoren (Daan en Sophie) via de browser spraaksynthesizer.
+
+4. Vraag-en-Antwoord Chat:
+Stel gerichte vragen over een of meerdere geselecteerde documenten. Je krijgt een gegrond antwoord met exacte citaten en aanklikbare bronverwijzingen [1], [2].
+
+Veel plezier met leren en onderzoeken!

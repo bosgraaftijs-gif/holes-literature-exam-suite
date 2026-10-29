@@ -1,0 +1,6 @@
+{
+  "language": "en",
+  "aiProvider": "local",
+  "geminiApiKey": "",
+  "autoWatchInbox": true
+}

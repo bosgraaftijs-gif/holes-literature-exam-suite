@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal NotebookLM — Holes Study &amp; Exam Suite</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏜️</text></svg>">
+</head>
+<body>
+  <!-- App Container -->
+  <div class="app-layout">
+    
+    <!-- Top Header -->
+    <header class="app-header">
+      <div class="header-brand">
+        <span class="brand-icon">🏜️</span>
+        <div class="brand-text">
+          <h1>Personal NotebookLM</h1>
+          <span class="brand-badge">Holes Study &amp; Exam Suite</span>
+        </div>
+      </div>
+
+      <div class="header-center">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="global-search" placeholder="Search chapters, themes, symbols...">
+          <button class="clear-search-btn" id="btn-clear-search" title="Clear search" style="display:none;">✕</button>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button class="btn btn-secondary" id="btn-toggle-sources" title="Toggle reference sources drawer">
+          <span>📂</span> Sources &amp; Documents (Optional) <span class="badge" id="source-count-header-badge">0</span>
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btn-new-note" title="New Note">
+          <span>➕</span> New Note
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btn-header-upload" onclick="app.openConvertModal()" title="Import study materials">
+          <span>📥</span> Import Material
+        </button>
+        <button class="btn btn-secondary" id="btn-focus-timer" title="Camp Green Lake 'Dig a Hole' Focus Timer">
+          <span>⛏️</span> Dig a Hole
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btn-lang-toggle" title="Toggle language (NL / EN)">
+          <span id="lang-flag">🇬🇧</span> <span id="lang-label">EN</span>
+        </button>
+        <button class="btn btn-icon" id="btn-settings-toggle" title="Settings">
+          ⚙️
+        </button>
+        <button class="btn btn-icon" id="btn-theme-toggle" title="Toggle dark/light theme">
+          🌓
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <div class="workspace-body">
+      
+      <!-- Left Sidebar: Sources (Collapsible) -->
+      <aside class="sidebar-sources collapsed" id="sidebar-sources">
+        <div class="sidebar-header">
+          <div class="sidebar-title-row">
+            <h2>Sources &amp; Documents</h2>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span class="badge" id="source-count-badge">0</span>
+              <button class="btn btn-icon btn-sm" id="btn-close-sidebar" title="Hide sources">✕</button>
+            </div>
+          </div>
+          <div class="sources-select-all">
+            <label class="checkbox-label">
+              <input type="checkbox" id="checkbox-select-all" checked>
+              <span>All Sources (Selected for Analysis)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="sources-filter-bar">
+          <input type="text" id="sources-filter-input" placeholder="Search &amp; filter sources...">
+        </div>
+
+        <!-- Document List -->
+        <div class="sources-list" id="sources-list">
+          <div class="sources-empty-state">
+            <span class="empty-icon">📁</span>
+            <p>No sources loaded yet.</p>
+            <small>Drop files into 'inbox/' to add materials.</small>
+          </div>
+        </div>
+
+        <!-- Quick Drop Zone at bottom of sidebar -->
+        <div class="sidebar-quick-drop" id="sidebar-quick-drop">
+          <span class="drop-icon">📂</span>
+          <p>Drop files here (.pdf, .docx, .html, .txt, .png, .jpg)</p>
+        </div>
+
+        <!-- Inbox Watcher Status -->
+        <div class="inbox-status-card">
+          <div class="status-indicator online"></div>
+          <div class="status-info">
+            <strong>Inbox Watcher Active</strong>
+            <small>Drop files into <code>inbox/</code> to add to library.</small>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right Main Workspace: Tabs & Content -->
+      <main class="main-content" id="main-content-area">
+        
+        <!-- Primary Tab Navigation -->
+        <nav class="nav-tabs">
+          <button class="tab-btn active" data-tab="tab-studio">
+            <span class="tab-icon">🎓</span> Study &amp; Exam Hub
+          </button>
+          <button class="tab-btn" data-tab="tab-chat">
+            <span class="tab-icon">💬</span> Literature Q&amp;A
+          </button>
+          <button class="tab-btn" data-tab="tab-viewer">
+            <span class="tab-icon">📖</span> Chapter Reader &amp; Notes
+          </button>
+        </nav>
+
+        <!-- Tab 1: Document Viewer & Editor -->
+        <section class="tab-panel" id="tab-viewer">
+          <div class="viewer-header">
+            <div class="viewer-title-info">
+              <h2 id="active-doc-title">Select a document</h2>
+              <div class="doc-meta-tags" id="doc-meta-tags" style="display:none;">
+                <span class="meta-tag" id="meta-format">MD</span>
+                <span class="meta-tag" id="meta-words">0 words</span>
+                <span class="meta-tag" id="meta-reading">1 min read time</span>
+              </div>
+            </div>
+            <div class="viewer-actions" id="viewer-actions" style="display:none;">
+              <button class="btn btn-secondary btn-sm" id="btn-toggle-edit">✏️ Edit</button>
+              <button class="btn btn-secondary btn-sm" id="btn-copy-markdown">📋 Copy</button>
+              <button class="btn btn-secondary btn-sm" id="btn-download-doc">💾 Download</button>
+              <button class="btn btn-primary btn-sm" id="btn-quick-summary">⚡ Summarize</button>
+              <button class="btn btn-accent btn-sm" id="btn-quick-quiz">🎯 Start Quiz</button>
+            </div>
+          </div>
+
+          <div class="viewer-container">
+            <!-- Rendered Markdown View -->
+            <div class="markdown-body" id="markdown-viewer">
+              <div class="empty-doc-placeholder">
+                <span class="placeholder-icon">📖</span>
+                <h3>No document selected</h3>
+                <p>Select a source from the <strong>Sources &amp; Documents</strong> drawer or choose an option below to begin studying.</p>
+                <div class="quick-start-buttons">
+                  <button class="btn btn-secondary" onclick="app.toggleSourcesSidebar(false)">📂 Open Sources Drawer</button>
+                  <button class="btn btn-primary" onclick="app.openConvertModal()">📥 Import Study Material</button>
+                  <button class="btn btn-secondary" onclick="app.openNewNoteModal()">✏️ Write New Note</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- In-place Markdown Editor (Hidden by default) -->
+            <div class="markdown-editor-pane" id="markdown-editor-pane" style="display:none;">
+              <div class="editor-toolbar">
+                <span class="editor-label">Markdown Editor:</span>
+                <div class="editor-toolbar-actions">
+                  <button class="btn btn-success btn-sm" id="btn-save-edit">💾 Save Changes</button>
+                  <button class="btn btn-secondary btn-sm" id="btn-cancel-edit">Cancel</button>
+                </div>
+              </div>
+              <textarea id="markdown-editor-textarea" spellcheck="false" placeholder="Type your note in Markdown..."></textarea>
+            </div>
+
+            <!-- Table of contents outline -->
+            <aside class="doc-outline" id="doc-outline" style="display:none;">
+              <h4>Table of Contents</h4>
+              <nav id="outline-links"></nav>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Tab 2: Grounded Q&A Chat -->
+        <section class="tab-panel" id="tab-chat">
+          <div class="chat-container">
+            <div class="chat-header">
+              <div class="chat-header-info">
+                <h3>Literature Q&amp;A</h3>
+                <p class="text-muted" id="chat-sources-indicator">Answers are 100% grounded in Louis Sachar's Holes and selected sources with direct citations.</p>
+              </div>
+              <button class="btn btn-secondary btn-sm" id="btn-clear-chat">🗑️ Clear Chat</button>
+            </div>
+
+            <!-- Suggested prompt chips -->
+            <div class="prompt-chips">
+              <button class="chip" data-prompt="Summarize the core themes and central narrative arc of Holes.">💡 Summarize Core Themes</button>
+              <button class="chip" data-prompt="Explain the three interwoven storylines: Stanley at Camp Green Lake, Green Lake 110 years ago, and Elya Yelnats in Latvia.">📚 3 Historical Storylines</button>
+              <button class="chip" data-prompt="Analyze the literary significance of the motifs: wild sweet onions, yellow-spotted lizards, and God's Thumb.">🧅 Motifs & Symbols</button>
+              <button class="chip" data-prompt="Detail Stanley Yelnats' moral and physical transformation and his friendship with Hector Zeroni.">👥 Stanley & Zero Character Arc</button>
+            </div>
+
+            <!-- Chat messages feed -->
+            <div class="chat-messages" id="chat-messages">
+              <div class="chat-bubble assistant initial-message">
+                <div class="bubble-avatar">📖</div>
+                <div class="bubble-content">
+                  <p>Hello! I am your personal <strong>Holes Literature Exam Assistant</strong>. Ask me any question about Louis Sachar's <em>Holes</em>, themes, character transformations, motifs, structural parallels, or exam essay topics. All answers are grounded in your study corpus.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chat input form -->
+            <form class="chat-input-bar" id="chat-form">
+              <textarea id="chat-input" rows="1" placeholder="Ask any question about Holes or your sources..."></textarea>
+              <button type="submit" class="btn btn-primary" id="btn-chat-send">Send ➔</button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Tab 3: Study & Exam Hub -->
+        <section class="tab-panel active" id="tab-studio">
+          <div class="studio-subtabs">
+            <button class="subtab-btn" data-subtab="studio-summary">📝 Summary</button>
+            <button class="subtab-btn" data-subtab="studio-quiz">🎯 Interactive Quiz</button>
+            <button class="subtab-btn" data-subtab="studio-flashcards">🃏 Flashcards</button>
+            <button class="subtab-btn" data-subtab="studio-guide">📖 Study Guide</button>
+            <button class="subtab-btn" data-subtab="studio-faq">❓ FAQ</button>
+            <button class="subtab-btn" data-subtab="studio-podcast">🎙️ Audio Overview</button>
+            <button class="subtab-btn" data-subtab="studio-chat" onclick="app.showTab('tab-chat')">💬 Literature Q&amp;A</button>
+            <button class="subtab-btn active" data-subtab="studio-hub">🏠 Study Hub</button>
+            <button class="subtab-btn" data-subtab="studio-timeline">⏳ Triple-Timeline</button>
+            <button class="subtab-btn" data-subtab="studio-motifs">🧅 Motifs &amp; Symbols</button>
+            <button class="subtab-btn" data-subtab="studio-quotes">💬 Quote Challenge</button>
+            <button class="subtab-btn" data-subtab="studio-essay">📝 Essay &amp; Thesis</button>
+            <button class="subtab-btn" data-subtab="studio-characters">🕸️ Character Network</button>
+          </div>
+
+          <!-- Studio Panel 0: Central Study & Exam Hub Dashboard -->
+          <div class="studio-content-panel active" id="studio-hub">
+            <div class="hub-hero-banner">
+              <div class="hub-hero-badge">Camp Green Lake Literature Study Suite</div>
+              <h2>Holes Literature Exam Hub</h2>
+              <p>Master Louis Sachar's award-winning novel through synchronized narrative timelines, spaced repetition flashcards, and grounded essay architecture.</p>
+              <div class="hub-quote-callout">
+                <em>"If you take a bad boy and make him dig a hole every day in the hot sun, it turns him into a good boy."</em> — Mr. Sir
+              </div>
+              <div class="hub-metrics-row">
+                <div class="metric-chip">⏳ 3 Timelines (110 Years)</div>
+                <div class="metric-chip">🎯 10 Exam Quizzes (A/B/C/D)</div>
+                <div class="metric-chip">🃏 15 SM-2 Flashcards</div>
+                <div class="metric-chip">📖 50 Chapter Analyses</div>
+                <div class="metric-chip">🎙️ Leo &amp; Maya Audio Debate</div>
+              </div>
+            </div>
+
+            <!-- The 7 Core Bento Cards -->
+            <div class="hub-grid">
+              <div class="hub-card" onclick="app.showStudioSubtab('studio-timeline')">
+                <div class="hub-card-header"><span class="hub-card-icon">⏳</span><span class="hub-card-tag">AO2 Structure</span></div>
+                <h3>Triple-Timeline Scrubber</h3>
+                <p>Scrub across 110 years of story time. View Latvia (1880s), Old Green Lake (1888), and Camp Green Lake (1990s) synchronized with causal convergence nodes.</p>
+                <div class="hub-card-footer"><span class="hub-card-meta">12 Story Milestones</span><button class="btn btn-sm btn-primary">Launch Timeline ➔</button></div>
+              </div>
+
+              <div class="hub-card" onclick="app.showStudioSubtab('studio-quiz')">
+                <div class="hub-card-header"><span class="hub-card-icon">🎯</span><span class="hub-card-tag">AO1 Recall</span></div>
+                <h3>Practice Exam Quizzes</h3>
+                <p>Test your knowledge with authentic 4-option multiple-choice exam questions with instant textual justifications and score tracking.</p>
+                <div class="hub-card-footer"><span class="hub-card-meta">4-Choice Standard</span><button class="btn btn-sm btn-accent">Start Quiz ➔</button></div>
+              </div>
+
+              <div class="hub-card" onclick="app.showStudioSubtab('studio-flashcards')">
+                <div class="hub-card-header"><span class="hub-card-icon">🃏</span><span class="hub-card-tag">SM-2 Spaced Repetition</span></div>
+                <h3>Active Recall Flashcards</h3>
+                <p>Master characters, quotes, and symbolic objects using 3D flip flashcards powered by the SM-2 spaced repetition algorithm. Spacebar flips.</p>
+                <div class="hub-card-footer"><span class="hub-card-meta">15 Study Cards</span><button class="btn btn-sm btn-primary">Review Cards ➔</button></div>
+              </div>
+
+              <div class="hub-card" onclick="app.showStudioSubtab('studio-guide')">
+                <div class="hub-card-header"><span class="hub-card-icon">📖</span><span class="hub-card-tag">Full Syllabus</span></div>
+                <h3>Literature Study Guides</h3>
+                <p>Complete curriculum syllabus with chapter-by-chapter breakdowns, character profiles, themes, and discussion questions.</p>
+                <div class="hub-card-footer"><span class="hub-card-meta">50 Chapters Covered</span><button class="btn btn-sm btn-primary">Open Syllabus ➔</button></div>
+              </div>
+
+              <div class="hub-card" onclick="app.showStudioSubtab('studio-podcast')">
+                <div class="hub-card-header"><span class="hub-card-icon">🎙️</span><span class="hub-card-tag">Leo &amp; Maya</span></div>
+                <h3>2-Host Audio Debate</h3>
+                <p>Listen to an engaging debate between hosts Leo and Maya analyzing Stanley's transformation, the drought curse, and institutional punishment.</p>
+                <div class="hub-card-footer"><span class="hub-card-meta">Audio Player &amp; Transcript</span><button class="btn btn-sm btn-primary">Listen to Episode ➔</button></div>
+              </div>
+
+              <div class="hub-card" onclick="app.showStudioSubtab('studio-faq')">
+                <div class="hub-card-header"><span class="hub-card-icon">❓</span><span class="hub-card-tag">High-Yield Prep</span></div>
+                <h3>Exam Q&amp;A &amp; FAQ</h3>
+                <p>Curated answers to frequently tested questions on fate vs free will, racial injustice in Green Lake, and the symbolism of names.</p>
+                <div class="hub-card-footer"><span class="hub-card-meta">Curated Answers</span><button class="btn btn-sm btn-primary">Browse FAQ ➔</button></div>
+              </div>
+
+              <div class="hub-card" onclick="app.showStudioSubtab('studio-essay')">
+                <div class="hub-card-header"><span class="hub-card-icon">💬</span><span class="hub-card-tag">AO1-AO4 Scaffold</span></div>
+                <h3>Literature Essay Q&amp;A</h3>
+                <p>Formulate exam essays using the 3-Clause Thesis Builder and PEEL paragraph scaffolding, with instant citations from the novel.</p>
+                <div class="hub-card-footer"><span class="hub-card-meta">PEEL Architecture</span><button class="btn btn-sm btn-primary">Plan Essay ➔</button></div>
+              </div>
+            </div>
+
+            <!-- Secondary Tools Row -->
+            <div class="hub-secondary-section">
+              <h4>Additional Revision Modules</h4>
+              <div class="hub-quick-pills">
+                <button class="quick-pill-btn" onclick="app.showStudioSubtab('studio-motifs')">🧅 Motifs &amp; Symbols</button>
+                <button class="quick-pill-btn" onclick="app.showStudioSubtab('studio-quotes')">💬 Quote Challenge</button>
+                <button class="quick-pill-btn" onclick="app.showStudioSubtab('studio-characters')">🕸️ Character Lineage Graph</button>
+                <button class="quick-pill-btn" onclick="app.openFocusTimerModal()">⛏️ Dig a Hole Focus Session</button>
+                <button class="quick-pill-btn" onclick="app.showTab('tab-viewer')">📖 Full Text Reader</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Panel 1: Summary -->
+          <div class="studio-content-panel" id="studio-summary">
+            <div class="studio-toolbar">
+              <div class="studio-options">
+                <label>Style:
+                  <select id="summary-mode-select">
+                    <option value="executive">Executive Summary</option>
+                    <option value="bullets" selected>Key Takeaways (Bullets)</option>
+                    <option value="in-depth">In-Depth Literary Analysis</option>
+                    <option value="tldr">TL;DR (Brief 2 Sentences)</option>
+                  </select>
+                </label>
+              </div>
+              <button class="btn btn-primary" id="btn-generate-summary">⚡ Generate Summary</button>
+            </div>
+
+            <div class="studio-card" id="summary-result-card">
+              <div class="card-empty-placeholder">
+                <span class="icon">📝</span>
+                <p>Click 'Generate Summary' to produce an automated synthesis of your selected sources.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Panel 2: Interactive Quiz -->
+          <div class="studio-content-panel" id="studio-quiz">
+            <div class="studio-toolbar">
+              <div class="studio-options">
+                <label>Question count:
+                  <select id="quiz-count-select">
+                    <option value="3">3 questions (Short)</option>
+                    <option value="5" selected>5 questions (Standard)</option>
+                    <option value="10">10 questions (Full exam)</option>
+                  </select>
+                </label>
+              </div>
+              <button class="btn btn-accent" id="btn-generate-quiz">🎯 Generate New Quiz</button>
+            </div>
+
+            <div class="quiz-container" id="quiz-runner-container">
+              <div class="card-empty-placeholder">
+                <span class="icon">🎯</span>
+                <p>Ready to test your knowledge? Click 'Generate New Quiz' to create an interactive quiz on your sources.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Panel 3: Flashcards -->
+          <div class="studio-content-panel" id="studio-flashcards">
+            <div class="studio-toolbar">
+              <span id="flashcard-counter" class="flashcard-counter-badge">0 / 0 cards</span>
+              <button class="btn btn-primary" id="btn-generate-flashcards">🃏 Generate Flashcards</button>
+            </div>
+
+            <div class="flashcards-wrapper" id="flashcards-wrapper">
+              <div class="card-empty-placeholder">
+                <span class="icon">🃏</span>
+                <p>Generate interactive study flashcards with key concepts, quotes, and character significance from your documents.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Panel 4: Study Guide -->
+          <div class="studio-content-panel" id="studio-guide">
+            <div class="studio-toolbar">
+              <div class="studio-options">
+                <span>Complete syllabus with learning objectives, glossary, and exam discussion questions</span>
+              </div>
+              <button class="btn btn-primary" id="btn-generate-guide">📖 Generate Study Guide</button>
+            </div>
+
+            <div class="studio-card markdown-body" id="study-guide-card">
+              <div class="card-empty-placeholder">
+                <span class="icon">📖</span>
+                <p>Click 'Generate Study Guide' to compile a comprehensive literature exam study guide.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Panel 5: Audio Overview (Podcast Deep Dive) -->
+          <div class="studio-content-panel" id="studio-podcast">
+            <div class="studio-toolbar">
+              <div class="studio-options">
+                <span>Literary Audio Deep Dive: Two hosts (Leo &amp; Maya) discuss key novel chapters and exam themes in an engaging dialogue</span>
+              </div>
+              <button class="btn btn-primary" id="btn-generate-podcast">🎙️ Generate Podcast Episode</button>
+            </div>
+
+            <div class="podcast-container" id="podcast-container">
+              <div class="card-empty-placeholder">
+                <span class="icon">🎙️</span>
+                <p>Generate a lively 2-host audio podcast discussion. Listen directly using the built-in player!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Panel 6: FAQ -->
+          <div class="studio-content-panel" id="studio-faq">
+            <div class="studio-toolbar">
+              <button class="btn btn-primary" id="btn-generate-faq">❓ Generate FAQ</button>
+            </div>
+
+            <div class="faq-container" id="faq-container">
+              <div class="card-empty-placeholder">
+                <span class="icon">❓</span>
+                <p>Automatically generate frequently asked exam questions and answers grounded in your sources.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Panel 7: Triple-Timeline Scrubber (Feature F1) -->
+          <div class="studio-content-panel" id="studio-timeline">
+            <button class="btn btn-secondary btn-sm back-to-hub-btn" onclick="app.showStudioSubtab('studio-hub')">◀ Back to Study Hub</button>
+            <div class="studio-toolbar timeline-toolbar">
+              <div class="timeline-meta-info">
+                <h3>⏳ Triple-Narrative Visualizer</h3>
+                <span>Synchronized across 110 years: Latvia (1880s) ↔ Old Green Lake (1888-1890s) ↔ Camp Green Lake (1990s)</span>
+              </div>
+              <div class="timeline-filter-buttons" id="timeline-theme-filters">
+                <button class="btn btn-sm btn-filter active" data-theme="all">All Themes</button>
+                <button class="btn btn-sm btn-filter" data-theme="Generational Curse">Curse &amp; Redemption</button>
+                <button class="btn btn-sm btn-filter" data-theme="Fate vs Free Will">Fate vs Free Will</button>
+                <button class="btn btn-sm btn-filter" data-theme="Institutional Cruelty">Institutional Cruelty</button>
+                <button class="btn btn-sm btn-filter" data-theme="Friendship &amp; Solidarity">Friendship &amp; Loyalty</button>
+              </div>
+            </div>
+
+            <!-- Scrubber Slider Control -->
+            <div class="scrubber-control-box">
+              <div class="scrubber-header-row">
+                <span class="scrubber-label">Narrative Scrubber (Chapter Progress):</span>
+                <span class="scrubber-position-badge" id="scrubber-step-display">Step 1 of 12 — Origins of the Curse</span>
+              </div>
+              <div class="scrubber-slider-wrapper">
+                <input type="range" id="timeline-scrubber-slider" min="1" max="12" value="1" step="1" class="timeline-slider">
+                <div class="scrubber-ticks" id="scrubber-ticks"></div>
+              </div>
+              <div class="scrubber-nav-buttons">
+                <button class="btn btn-secondary btn-sm" id="btn-scrubber-prev">◀ Previous Step</button>
+                <button class="btn btn-accent btn-sm" id="btn-scrubber-play">▶ Auto-Play Timeline</button>
+                <button class="btn btn-secondary btn-sm" id="btn-scrubber-next">Next Step ▶</button>
+              </div>
+            </div>
+
+            <!-- 3 Parallel Era Tracks -->
+            <div class="triple-timeline-tracks-container" id="timeline-tracks-container">
+              <!-- Era A Track -->
+              <div class="era-track" id="track-era-a">
+                <div class="era-track-header era-a-header">
+                  <span class="era-icon">🇱🇻</span>
+                  <h4>Era A: Latvia (1880s)</h4>
+                  <small>Elya Yelnats &amp; Madame Zeroni</small>
+                </div>
+                <div class="era-cards-list" id="era-a-cards"></div>
+              </div>
+
+              <!-- Era B Track -->
+              <div class="era-track" id="track-era-b">
+                <div class="era-track-header era-b-header">
+                  <span class="era-icon">🧅</span>
+                  <h4>Era B: Old Green Lake (1888-1890s)</h4>
+                  <small>Katherine Barlow, Sam &amp; Trout Walker</small>
+                </div>
+                <div class="era-cards-list" id="era-b-cards"></div>
+              </div>
+
+              <!-- Era C Track -->
+              <div class="era-track" id="track-era-c">
+                <div class="era-track-header era-c-header">
+                  <span class="era-icon">🏜️</span>
+                  <h4>Era C: Camp Green Lake (1990s)</h4>
+                  <small>Stanley IV, Hector Zeroni &amp; The Warden</small>
+                </div>
+                <div class="era-cards-list" id="era-c-cards"></div>
+              </div>
+            </div>
+
+            <!-- Selected Event Exam Commentary & Citation Card -->
+            <div class="timeline-commentary-pane" id="timeline-commentary-pane">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Studio Panel 8: Symbolism & Motif Tracker (Feature F2) -->
+          <div class="studio-content-panel" id="studio-motifs">
+            <div class="studio-toolbar">
+              <div class="studio-options">
+                <span>Core Exam Motifs in <em>Holes</em> (AQA / Edexcel / GCSE / IB AO1 &amp; AO2):</span>
+              </div>
+              <div class="motif-selector-pills" id="motif-pills-container">
+                <button class="btn btn-sm btn-filter active" data-motif="onions">🧅 Wild Sweet Onions</button>
+                <button class="btn btn-sm btn-filter" data-motif="sploosh">🍑 Sploosh &amp; Peaches</button>
+                <button class="btn btn-sm btn-filter" data-motif="shovels_holes">⛏️ Shovels &amp; Holes</button>
+                <button class="btn btn-sm btn-filter" data-motif="lizards_venom">🦎 Lizards &amp; Venom</button>
+                <button class="btn btn-sm btn-filter" data-motif="lullaby">🎶 The Pig Lullaby</button>
+              </div>
+            </div>
+            <div class="motif-detail-wrapper" id="motif-detail-wrapper">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Studio Panel 9: Quote Identification & Analysis Challenge (Feature F3) -->
+          <div class="studio-content-panel" id="studio-quotes">
+            <div class="studio-toolbar">
+              <div class="studio-options">
+                <span>Master 10 iconic quotations: Speaker identification, plot precision, and critical subtext</span>
+              </div>
+              <div style="display: flex; gap: 8px; align-items: center;">
+                <span class="badge" id="quote-streak-badge">Streak: 🔥 0</span>
+                <span class="badge" id="quote-score-badge">Score: 0 / 0</span>
+                <button class="btn btn-accent btn-sm" id="btn-next-quote" onclick="app.loadNextQuote()">Next Quote ➔</button>
+              </div>
+            </div>
+            <div class="quote-challenge-wrapper" id="quote-challenge-wrapper">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Studio Panel 10: Essay Prompt & Thesis Generator (Feature F4) -->
+          <div class="studio-content-panel" id="studio-essay">
+            <div class="studio-toolbar">
+              <div class="studio-options" style="flex: 1;">
+                <label>Select Literature Exam Prompt:
+                  <select id="essay-prompt-select"></select>
+                </label>
+              </div>
+              <div style="display: flex; gap: 8px;">
+                <button class="btn btn-secondary btn-sm" id="btn-copy-essay-plan" onclick="app.copyEssayPlan()">📋 Copy Plan</button>
+                <button class="btn btn-primary btn-sm" id="btn-save-essay-note" onclick="app.saveEssayPlanAsNote()">💾 Save to Notes</button>
+              </div>
+            </div>
+            <div class="essay-builder-wrapper" id="essay-builder-wrapper">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Studio Panel 11: Character & Family Tree Graph (Feature F8) -->
+          <div class="studio-content-panel" id="studio-characters">
+            <div class="studio-toolbar">
+              <div class="studio-options">
+                <span>Topological Lineage &amp; Character Map across 3 Generations (Click any character to view exam lore):</span>
+              </div>
+              <div class="character-era-filters" id="character-era-filters">
+                <button class="btn btn-sm btn-filter active" data-era="all">All Dynasties</button>
+                <button class="btn btn-sm btn-filter" data-era="Yelnats">Yelnats Line</button>
+                <button class="btn btn-sm btn-filter" data-era="Zeroni">Zeroni Line</button>
+                <button class="btn btn-sm btn-filter" data-era="Walker">Walker Line</button>
+                <button class="btn btn-sm btn-filter" data-era="Camp Staff">Camp Staff</button>
+              </div>
+            </div>
+            <div class="character-graph-layout">
+              <div class="character-svg-canvas" id="character-svg-canvas">
+                <!-- SVG rendered dynamically -->
+              </div>
+              <div class="character-profile-pane" id="character-profile-pane">
+                <div class="card-empty-placeholder">
+                  <span class="icon">👤</span>
+                  <p>Click any character node in the graph to view their detailed lore profile, symbolic role, key quotations, and exam points.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Import & Conversion Modal (Ingestion Hub) -->
+  <div class="modal-backdrop" id="modal-convert" style="display:none;">
+    <div class="modal-card convert-modal-card">
+      <div class="modal-header">
+        <h3>📥 Convert &amp; Ingest Document</h3>
+        <button class="modal-close" onclick="app.closeConvertModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <section class="tab-panel active" id="tab-convert">
+          <div class="convert-hub modal-convert-hub">
+            <div class="convert-intro">
+              <p>Convert into clean .md / .txt with image extraction</p>
+            </div>
+
+            <!-- Upload Drop Zone -->
+            <div class="upload-dropzone" id="main-dropzone">
+              <input type="file" id="file-input-element" multiple style="display:none;" accept=".pdf,.docx,.doc,.html,.htm,.txt,.md,.json,.csv,.png,.jpg,.jpeg,.webp,.gif,.svg">
+              <div class="dropzone-content">
+                <span class="dropzone-icon">📥</span>
+                <h3>Drag &amp; drop files here (PDF, DOCX, TXT, HTML, Images)</h3>
+                <p>Supported: PDF, Word (.docx), HTML, TXT, Markdown, CSV, JSON and images (.png, .jpg, .webp, .svg)</p>
+                <div class="dropzone-options">
+                  <label class="radio-label">
+                    <input type="radio" name="convert-target-format" value="md" checked>
+                    <span>Convert to Markdown (.md) [Recommended]</span>
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="convert-target-format" value="txt">
+                    <span>Convert to Plain Text (.txt)</span>
+                  </label>
+                </div>
+                <button class="btn btn-primary" id="btn-browse-files">Select Files from Disk</button>
+              </div>
+            </div>
+
+            <!-- Direct Paste Section -->
+            <div class="paste-section-card">
+              <h3>Or paste direct text / notes:</h3>
+              <div class="paste-form">
+                <input type="text" id="paste-title" placeholder="Document title...">
+                <textarea id="paste-content" rows="4" placeholder="Paste your text, study notes, or excerpt here..."></textarea>
+                <button class="btn btn-secondary" id="btn-convert-pasted">Save Text as Document</button>
+              </div>
+            </div>
+
+            <!-- Inbox Folder Info Card -->
+            <div class="inbox-info-card">
+              <div class="inbox-card-icon">📂</div>
+              <div class="inbox-card-body">
+                <h4>Automatic Inbox Watcher</h4>
+                <p>You can also drop files directly into the <code>inbox/</code> folder in this project. The background watcher immediately converts them to Markdown!</p>
+              </div>
+            </div>
+
+            <!-- Conversion Results / Activity Feed -->
+            <div class="conversion-feed-section" id="conversion-feed-section" style="display:none;">
+              <h3>Recent Conversions</h3>
+              <div class="conversion-list" id="conversion-list"></div>
+            </div>
+
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="app.closeConvertModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div class="modal-backdrop" id="modal-settings" style="display:none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>⚙️ Settings</h3>
+        <button class="modal-close" onclick="app.closeSettingsModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="setting-language">Default Language:</label>
+          <select id="setting-language">
+            <option value="en" selected>English (en)</option>
+            <option value="nl">Nederlands (nl)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="setting-ai-mode">AI Processing Mode:</label>
+          <select id="setting-ai-mode">
+            <option value="local" selected>Local Smart NLP Engine (100% offline, no key required)</option>
+            <option value="gemini">Google Gemini API (Optional)</option>
+          </select>
+        </div>
+        <div class="form-group" id="group-gemini-key">
+          <label for="setting-gemini-key">Google Gemini API Key (Optional):</label>
+          <input type="password" id="setting-gemini-key" placeholder="AIzaSy...">
+          <small>Stored only locally in settings.json.</small>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="setting-watch-inbox" checked>
+            <span>Enable Inbox Watcher automatically</span>
+          </label>
+        </div>
+        <div class="form-group" style="margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--border-color);">
+          <label>Study Material Management:</label>
+          <button class="btn btn-secondary btn-sm" onclick="app.closeSettingsModal(); app.openConvertModal();">📥 Open File Importer / Ingestion Hub</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="app.closeSettingsModal()">Cancel</button>
+        <button class="btn btn-primary" id="btn-save-settings">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- New Note Modal -->
+  <div class="modal-backdrop" id="modal-new-note" style="display:none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>➕ Create New Note</h3>
+        <button class="modal-close" onclick="app.closeNewNoteModal()">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label for="new-note-title">Note title:</label>
+          <input type="text" id="new-note-title" placeholder="e.g. Holes Chapter 1-5 Analysis">
+        </div>
+        <div class="form-group">
+          <label for="new-note-format">File format:</label>
+          <select id="new-note-format">
+            <option value="md" selected>Markdown (.md)</option>
+            <option value="txt">Plain Text (.txt)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="new-note-initial-content">Initial content (optional):</label>
+          <textarea id="new-note-initial-content" rows="6" placeholder="# Title..."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="app.closeNewNoteModal()">Cancel</button>
+        <button class="btn btn-primary" id="btn-confirm-create-note">Create & Open</button>
+      </div>
+    </div>
+  </div>
+  <!-- Focus Timer Modal (Camp Green Lake 'Dig a Hole') -->
+  <div class="modal-backdrop" id="modal-focus-timer" style="display:none;">
+    <div class="modal-card focus-modal-card">
+      <div class="modal-header">
+        <h3>⛏️ Camp Green Lake Focus Timer</h3>
+        <button class="modal-close" onclick="app.closeFocusTimerModal()">✕</button>
+      </div>
+      <div class="modal-body focus-timer-body">
+        <div class="focus-timer-status-badge" id="focus-timer-mode-badge">DIGGING HOLE #1 (TENT D)</div>
+        <div class="focus-timer-countdown" id="focus-timer-countdown">25:00</div>
+        
+        <div class="depth-indicator-wrapper">
+          <div class="depth-label-row">
+            <span>Target: 5.0 ft deep &amp; 5.0 ft wide (by shovel length)</span>
+            <span id="focus-shovel-depth-label">0.0 ft / 5.0 ft</span>
+          </div>
+          <div class="depth-progress-bar">
+            <div class="depth-progress-fill" id="focus-depth-fill" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <div class="focus-stats-row">
+          <div class="focus-stat-pill">🕳️ Holes Dug Today: <strong id="focus-holes-count">0</strong></div>
+          <div class="focus-stat-pill">💧 Water Canteen: <strong id="focus-canteen-level">Full</strong></div>
+        </div>
+
+        <p class="focus-quote" id="focus-daily-quote">
+          "You take a bad boy and make him dig a hole every day in the hot sun, it turns him into a good boy." — Mr. Sir
+        </p>
+
+        <div class="focus-timer-controls">
+          <button class="btn btn-accent" id="btn-focus-start">▶ Start Digging</button>
+          <button class="btn btn-secondary" id="btn-focus-pause" style="display:none;">⏸ Pause</button>
+          <button class="btn btn-secondary" id="btn-focus-water">💧 Water Break (5 min)</button>
+          <button class="btn btn-secondary" id="btn-focus-reset">⏹ Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Local Marked library -->
+  <script src="vendor/marked.min.js"></script>
+  <!-- Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+# Holes — Complete Character Guide, Fandom Lore, and Literary Analysis
+
+Welcome to the definitive, high-yield character compendium for Louis Sachar's award-winning novel *Holes*, specifically synthesized for academic study, secondary/high-school English literature exam preparation, and the Holes Exam Study Suite. This guide meticulously details every character across all three intertwined narrative timelines: modern-day Camp Green Lake, nineteenth-century Green Lake, and mid-nineteenth-century Latvia.
+
+---
+
+## Table of Contents
+1. [The Central Protagonists](#the-central-protagonists)
+   - [Stanley Yelnats IV ("Caveman")](#stanley-yelnats-iv-caveman)
+   - [Hector Zeroni ("Zero")](#hector-zeroni-zero)
+2. [The Inhabitants of Tent D (D-Tent Campers)](#the-inhabitants-of-tent-d-d-tent-campers)
+   - [Rex Alvin Washburn ("X-Ray")](#rex-alvin-washburn-x-ray)
+   - [Theodore Johnson ("Armpit")](#theodore-johnson-armpit)
+   - [José ("Magnet")](#josé-magnet)
+   - [Ricky ("Zigzag")](#ricky-zigzag)
+   - [Alan ("Squid")](#alan-squid)
+   - [Brian ("Twitch")](#brian-twitch)
+   - [Lewis / Louis ("Barf Bag")](#lewis--louis-barf-bag)
+3. [The Camp Administration and the Walker Dynasty](#the-camp-administration-and-the-walker-dynasty)
+   - [The Warden (Louise Walker)](#the-warden-louise-walker)
+   - [Marion Sevillo ("Mr. Sir")](#marion-sevillo-mr-sir)
+   - [Dr. Pendanski ("Mom")](#dr-pendanski-mom)
+4. [Historical Figures of 19th-Century Green Lake](#historical-figures-of-19th-century-green-lake)
+   - [Katherine Barlow ("Kissin' Kate Barlow")](#katherine-barlow-kissin-kate-barlow)
+   - [Sam the Onion Man](#sam-the-onion-man)
+   - [Charles "Trout" Walker](#charles-trout-walker)
+   - [Linda Miller Walker](#linda-miller-walker)
+   - [The Sheriff of Green Lake](#the-sheriff-of-green-lake)
+5. [The Latvian Origins and the Yelnats Family Genealogy](#the-latvian-origins-and-the-yelnats-family-genealogy)
+   - [Elya Yelnats](#elya-yelnats)
+   - [Madame Zeroni](#madame-zeroni)
+   - [Myra Menke, Morris Menke & Igor Barkov](#myra-menke-morris-menke--igor-barkov)
+   - [Sarah Miller Yelnats](#sarah-miller-yelnats)
+   - [Stanley Yelnats I, II, and III](#stanley-yelnats-i-ii-and-iii)
+   - [Tiffany Yelnats (Mother)](#tiffany-yelnats-mother)
+6. [Supporting and Minor Characters](#supporting-and-minor-characters)
+   - [Clyde "Sweet Feet" Livingston](#clyde-sweet-feet-livingston)
+   - [Ms. Carla Morengo (Defense Attorney)](#ms-carla-morengo-defense-attorney)
+   - [Derrick Dunne (School Bully)](#derrick-dunne-school-bully)
+   - [Historical Town Residents](#historical-town-residents)
+7. [Comprehensive Character Matrix Table](#comprehensive-character-matrix-table)
+
+---
+
+## The Central Protagonists
+
+### Stanley Yelnats IV ("Caveman")
+![Stanley Yelnats IV](assets/stanley_yelnats_iv.jpg)
+*Stanley Yelnats IV, portrayed by Shia LaBeouf in the 2003 film adaptation.*
+
+- **Full Legal Name**: Stanley Yelnats IV
+- **Camp Nickname**: "Caveman" — bestowed by the boys of Tent D after a brief misunderstanding regarding his toughness when confronting the camper known as the Lump.
+- **Age**: 14 years old upon arrival at Camp Green Lake; 15 years old by the narrative's conclusion.
+- **Narrative Role**: Central Protagonist; dynamic viewpoint character experiencing a classic *bildungsroman* (coming-of-age transformation).
+- **Family Lineage**: Great-great-grandson of Elya Yelnats; great-grandson of Stanley Yelnats I; son of Stanley Yelnats III (an eccentric, impoverished inventor).
+- **Linguistic Device**: Palindromic name — S-T-A-N-L-E-Y spelled backwards is Y-E-L-N-A-T-S. This cyclical motif mirrors the circular, repeating nature of history, karma, and generational fate.
+
+#### Physical Description and Transformation
+At the novel's exposition, Stanley is overweight, unathletic, awkward, and severely lacking in self-esteem. He has suffered chronic social isolation and bullying at school. By the novel's resolution, the brutal physical toil of digging five-foot holes under the Texaanse sun has radically transformed his physique: he has lost excess weight, developed dense muscle, acquired thick calluses on his hands, and cultivated profound physical endurance and mental fortitude.
+
+#### Character Arc and Bildungsroman
+Stanley's psychological evolution is the moral spine of *Holes*. Initially, Stanley embodies passive victimhood, readily blaming his misfortune on his family's legendary ancestral curse ("no-good-dirty-rotten-pig-stealing-great-great-grandfather"). However, his internment at Camp Green Lake compels him to develop agency, moral courage, and authentic empathy. 
+
+![Stanley in Court](assets/stanley_courtroom.png)
+*Stanley Yelnats IV hearing his wrongful sentence in the courtroom.*
+
+His relationship with Hector Zeroni ("Zero") serves as the crucible of his maturity. When Stanley discovers Zero's functional illiteracy and exceptional mathematical aptitude, they establish a mutually supportive pact: Zero digs part of Stanley's daily hole, and Stanley teaches Zero to read and write. When Zero flees into the deadly desert, Stanley discards his passive compliance, steals the camp water truck, and ventures into the barren wasteland to save his friend. By physically carrying Hector Zeroni up Big Thumb mountain, Stanley breaks the generational curse not through magic, but through self-sacrificial love and loyalty.
+
+#### Key Quotes & Literary Analysis
+1. *"I am in the right place at the right time."*  
+   **Analysis**: Toward the climax, Stanley realizes that what appeared to be devastating bad luck (his wrongful arrest and harsh incarceration) was actually providential destiny, placing him precisely where he could right historical wrongs, break the curse, and claim his rightful heritage.
+2. *"He didn't want to dig any more holes. But he knew that if he walked out into the desert, he'd die."*  
+   **Analysis**: Illustrates Stanley's early survival instinct, trapped between institutionalized torment and natural hostility.
+3. *"Zero wasn't a nobody. He was somebody."*  
+   **Analysis**: Marks Stanley's definitive moral awakening against the dehumanizing ideology enforced by Mr. Pendanski and the camp establishment.
+
+#### Thematic & Symbolic Dimensions
+- **Fate vs. Agency**: Moves from a fatalistic reliance on the curse excuse to proactive moral self-determination.
+- **The Healing Hero**: Mirrors his great-grandfather Stanley I, who found refuge on God's Thumb, while resolving the ancestral sin of Elya Yelnats.
+
+---
+
+### Hector Zeroni ("Zero")
+![Hector Zeroni (Zero)](assets/hector_zeroni_zero.png)
+*Hector Zeroni ("Zero"), portrayed by Khleo Thomas.*
+
+- **Full Legal Name**: Hector Zeroni
+- **Camp Nickname**: "Zero" — cruel label imposed by camp counselors and fellow inmates under the false premise that his mind is empty ("nothing inside his head").
+- **Age**: Approximately 13–14 years old.
+- **Narrative Role**: Deuteragonist; moral catalyst; rightful heir of Madame Zeroni.
+- **Family Lineage**: Great-great-grandson of Madame Zeroni; son of Mrs. Zeroni (a homeless woman who was tragically separated from him in early childhood).
+
+![Zero in the Sun](assets/zero_hat.jpg)
+*Zero working silently under the blazing Texas heat.*
+
+#### Biography and Character Analysis
+Hector Zeroni is the heart and moral engine of *Holes*. Orphaned and homeless from a very young age after his mother vanished from a park where she instructed him to wait, Hector survived on the streets of urban Texas. He never attended school and is completely illiterate upon entering Camp Green Lake, which leads the incompetent counselors to dismiss him as hopelessly ignorant. 
+
+In truth, Zero possesses exceptional innate cognitive abilities, particularly mental arithmetic. He can instantly calculate the number of letters in words and perform complex mental math calculations in seconds. Physically, Zero is small and slight, yet he possesses extraordinary physical speed, tenacity, and willpower, consistently finishing his five-foot hole hours before any other boy in Tent D.
+
+Zero is also the real culprit behind the stolen sneakers of Clyde "Sweet Feet" Livingston. Possessing ruined, disintegrating shoes, Hector took the sneakers from a homeless shelter display out of sheer necessity, having no conception of their celebrity value. When bystanders yelled about theft, Hector panicked, ran outside, and tossed the shoes over an overpass bridge — directly striking the passing Stanley Yelnats on the head.
+
+When counselor Dr. Pendanski incessantly taunts Zero's intelligence (*"You might as well try to teach this shovel to read! D-I-G, what does that spell?"*), Hector refuses further dehumanization, strikes Pendanski unconscious with his shovel, and flees into the salt flats, choosing imminent death over spiritual enslavement. Zero survives on 110-year-old preserved spiced peaches ("Sploosh") discovered beneath the wreck of Sam's boat, the *Mary Lou*. When Stanley carries him up God's Thumb, Zero receives nourishment from wild mountain onions and natural spring water, recovering his health. After retrieving the Yelnats treasure chest, Zero uses his $1 million share to hire private investigators, successfully finding and reuniting with his beloved mother.
+
+#### Key Quotes & Literary Analysis
+1. *"I'm not stupid. I know everyone thinks I am. I just don't like answering their stupid questions."*  
+   **Analysis**: Demonstrates Zero's defensive emotional barrier against institutional scorn and his quiet, self-possessed dignity.
+2. *"You might as well teach this shovel to read... D-I-G."* (Mr. Pendanski's taunt before Zero's rebellion).  
+   **Analysis**: Represents the psychological nadir of institutional abuse, catalyzing Zero's heroic act of defiance.
+3. *"If only, if only, the moon speaks no reply; Reflecting the sun and all that's gone by..."*  
+   **Analysis**: The complete Zeroni lullaby sung by his mother at the book's resolution, providing aesthetic and emotional catharsis.
+
+---
+
+## The Inhabitants of Tent D (D-Tent Campers)
+
+![D-Tent](assets/d_tent.png)
+*Tent D — The primary residential tent housing Stanley, Zero, and the core juvenile group.*
+
+### Rex Alvin Washburn ("X-Ray")
+![X-Ray](assets/x_ray_rex_washburn.jpg)
+- **Camp Nickname Origin**: Pig Latin for his actual legal name, Rex (Rex -> Ex-Ray -> X-Ray). Rex also claims he possesses metaphorical X-ray vision that allows him to see through people.
+- **Physical Characteristics**: Short, slight, dark-skinned, wears thick, dusty glasses that constantly need wiping.
+- **Social Dynamic**: The undisputed, charismatic alpha leader of Tent D. Despite his small physical stature, every boy defers to X-Ray's authority, including the hulking Armpit. X-Ray enforces an informal pecking order at the camp water truck and strictly mandates that newcomers hand over any interesting finds to him. 
+- **Key Plot Contribution**: Coerces Stanley into giving him the gold lipstick tube engraved with "KB" (Katherine Barlow's initials). When X-Ray claims credit for the discovery the following morning, the Warden awards him a day off and double shower privileges, resulting in the Warden ordering days of pointless digging around X-Ray's hole while Stanley's actual find-site remains unexplored.
+
+### Theodore Johnson ("Armpit")
+![Armpit](assets/armpit_theodore_johnson.png)
+- **Camp Nickname Origin**: Earned after being stung by a scorpion under his armpit; also reinforced by his pungent body odor during heavy manual labor.
+- **Physical Characteristics**: Tall, muscular, physically intimidating; acts as the muscle and enforcer of Tent D.
+- **Background & Offense**: Sentenced to Camp Green Lake after getting into a violent altercation outside a movie theater with two older boys who attacked him.
+- **Extended Fandom Lore**: Theodore is the primary protagonist of Louis Sachar's acclaimed 2006 companion novel *Small Steps*. In *Small Steps*, Theodore returns to Austin, Texas, working as a landscape laborer, fighting racial prejudice and probation restrictions while befriending a young girl named Ginny who has cerebral palsy, ultimately becoming entangled with teenage pop star Kaira DeLeon.
+
+### José ("Magnet")
+![Magnet](assets/magnet_jose.jpg)
+- **Camp Nickname Origin**: Claims his fingers are literal magnets because valuable items naturally "stick" to his hands.
+- **Background & Skill**: A gifted pickpocket and thief of Hispanic heritage, sentenced after stealing a purebred dog from a pet shop and holding stolen merchandise from a convenience store.
+- **Key Plot Contribution**: In Chapter 19, Magnet steals Mr. Sir's burlap sack of sunflower seeds from the water truck. When Magnet panics and tosses the sack, it ruptures into Stanley's hole. Stanley chivalrously claims sole responsibility for the theft to shield Magnet from retribution, leading to Stanley being dragged before the Warden.
+
+### Ricky ("Zigzag")
+![Zigzag](assets/zigzag_ricky.jpg)
+- **Camp Nickname Origin**: Named after his wild, electrocuted-looking frizzy blond hair and erratic, jerky head movements.
+- **Personality & Mental State**: The most volatile, mentally unstable, and aggressively paranoid camper in Tent D.
+- **Key Conflict**: In Chapter 30, consumed by jealousy over Zero digging part of Stanley's hole, Zigzag violently provokes and attacks Stanley. Goaded by Mr. Pendanski, Zigzag savagely beats Stanley until Zero intervenes, locking Zigzag in a ferocious chokehold that nearly suffocates him.
+
+### Alan ("Squid")
+![Squid](assets/squid_alan.jpg)
+- **Personality**: Sarcastic, loud, and verbally abrasive; acts tough in the yard and constantly taunts other boys to mask his own emotional vulnerability.
+- **Vulnerability**: Early in the novel, Stanley awakens in the night to hear Squid weeping softly into his pillow; when Stanley checks on him, Squid aggressively threatens him, lying that his tears are caused by "allergies."
+- **Redemption**: At Stanley's release, Squid sheds his tough exterior and privately begs Stanley to telephone his mother, apologize on his behalf, and tell her that Alan loves her.
+
+### Brian ("Twitch")
+![Twitch](assets/twitch_brian.png)
+- **Camp Nickname Origin**: Afflicted with nervous involuntary muscle spasms and fidgeting whenever he is near automobiles.
+- **Background**: A chronic juvenile car thief who replaces Zero in Tent D.
+- **Key Contribution**: Inadvertently teaches Stanley how to start and operate the camp water truck by babbling about clutches and gears, enabling Stanley's daring vehicular theft to search for Zero.
+
+### Lewis / Louis ("Barf Bag")
+![Barf Bag](assets/barfbag_lewis.jpg)
+- **Significance**: Stanley's direct predecessor in Tent D whose vacated cot Stanley inherits.
+- **Fate**: Driven to utter desperation by the Warden's merciless digging regime, Lewis deliberately removed his shoe and sock and intentionally stepped on a rattlesnake to be hospitalized, choosing agonizing venom over another day of forced labor.
+
+---
+
+## The Camp Administration and the Walker Dynasty
+
+### The Warden (Louise Walker)
+![The Warden](assets/the_warden_louise_walker.jpg)
+*The Warden (Louise Walker), portrayed by Sigourney Weaver.*
+
+- **Full Legal Name**: Louise Walker
+- **Official Role**: Sole proprietor, director, and absolute autocrat of Camp Green Lake.
+- **Ancestry**: Granddaughter of Charles "Trout" Walker and Linda Miller Walker.
+- **Portrayal**: In the 2003 film adaptation, portrayed with chilling corporate malice by Sigourney Weaver.
+
+![Warden Nail Polish](assets/warden_nail_polish.jpg)
+*The Warden paints her fingernails with rattlesnake venom.*
+
+#### Motives and Modus Operandi
+The Warden is the living embodiment of generational obsession and institutional corruption. Her ancestors spent their lives and family fortune desperately excavating the parched lakebed in search of the buried fortune amassed by legendary outlaw Kissin' Kate Barlow. As an adult, Louise Walker realized she could exploit the Texas penal code to create a juvenile correctional facility, thereby securing an endless, self-replenishing supply of free forced labor to systematically dig up the entire lake.
+
+Her signature weapon and emblem of dominance is her customized dark red fingernail polish, infused with fresh, lethal **rattlesnake venom**. While harmless once dry, the polish remains toxic and caustic while wet. In Chapter 20, she brutally slashes Mr. Sir across the face with her wet fingernails for wasting her time over stolen sunflower seeds, demonstrating her ruthless sadistic power.
+
+![Walkers Digging](assets/walkers_digging.png)
+*Three generations of the Walker dynasty excavating Green Lake.*
+
+At the novel's climax, her criminal empire crumbles when Stanley's attorney, Ms. Morengo, and the Texas Attorney General arrive. The Warden is exposed as a fraudulent exploiter of children, Camp Green Lake is permanently closed, and she is forced to sell the Walker family land to the Girl Scouts.
+
+---
+
+### Marion Sevillo ("Mr. Sir")
+![Mr. Sir](assets/mr_sir_marion_sevillo.jpg)
+*Marion Sevillo ("Mr. Sir"), portrayed by Jon Voight.*
+
+- **Full Legal Name**: Marion Sevillo (revealed in the screenplay/film).
+- **Official Title**: Chief Counselor and Camp Operations Manager.
+- **Signature Catchphrase**: *"This ain't a Girl Scout camp!"*
+- **Habits & Mannerisms**: Wears a wide-brimmed Stetson hat, aviator sunglasses, and a rattlesnake tattoo on his forearm. Having recently quit smoking, he constantly chews and spits sunflower seeds, scattering shells indiscriminately.
+- **Cruelty & Retribution**: Following the Warden's venomous attack on his face, Mr. Sir's face swells into an grotesque, purple mass. Consumed by vindictive fury, he blames Stanley for the humiliation. During subsequent water refills, Mr. Sir deliberately pours Stanley's daily water ration directly onto the parched desert sand, forcing Stanley to endure agonizing dehydration.
+
+---
+
+### Dr. Pendanski ("Mom")
+![Dr. Pendanski](assets/dr_pendanski.jpg)
+*Dr. Pendanski ("Mom"), portrayed by Tim Blake Nelson.*
+
+- **Camp Moniker**: Insists the campers address him affectionately as "Mom."
+- **Role**: Designated counselor for Tent D.
+- **Thematic Function: Hypocrisy and Bureaucratic Cruelty**: While Mr. Sir is openly brutal, Dr. Pendanski is arguably far more insidious. He masquerades as a compassionate, nurturing mentor interested in the boys' rehabilitation and career ambitions, but his facade masks deep cynicism and cruelty. He relentlessly targets Zero with psychological abuse, mocking his illiteracy and declaring him subhuman. When Zero flees, Pendanski callously erases Hector's state computer records, treating a human child's life as an inconvenient bureaucratic record to be deleted.
+
+---
+
+## Historical Figures of 19th-Century Green Lake
+
+### Katherine Barlow ("Kissin' Kate Barlow")
+![Kissin' Kate Barlow](assets/kissin_kate_barlow.jpg)
+*Katherine Barlow, portrayed by Patricia Arquette.*
+
+- **Original Identity**: Respected, compassionate schoolteacher of 1888 Green Lake.
+- **Culinary Specialty**: Famed throughout Texas for her award-winning canned spiced peaches, made from a secret family recipe using cinnamon and cloves.
+
+![Wanted Poster](assets/wanted_poster_kate_barlow.jpg)
+*The historic wanted poster for the outlaw Kissin' Kate Barlow.*
+
+#### Tragic Descent into Outlawry
+A century prior to Stanley's arrival, Green Lake was a breathtaking freshwater haven surrounded by lush peach orchards. Katherine Barlow was courted by the town's wealthiest and most arrogant aristocrat, Charles "Trout" Walker, whom she firmly rejected. Instead, Katherine fell in love with **Sam**, the African-American onion peddler who repaired her schoolhouse roof and shared her passion for poetry.
+
+When the town witnessed their innocent kiss, racial hatred exploded. An angry mob led by Trout Walker incinerated the schoolhouse. When Katherine pleaded with the corrupt sheriff for intervention, he drunkenly demanded a kiss in exchange for his duty. After Trout Walker slaughtered Sam on the lake, Katherine's gentle spirit broke. Three days later, Katherine executed the sheriff, applied bold red lipstick, and kissed his dead forehead — initiating her twenty-year reign as the notorious Wild West outlaw **Kissin' Kate Barlow**.
+
+![Death of Kate Barlow](assets/kate_barlow_lizard_bite.png)
+*Kate Barlow dying with defiant laughter after a yellow-spotted lizard bite.*
+
+During her outlaw career, she robbed scores of stagecoaches, trains, and banks across Texas, including the carriage carrying Stanley Yelnats I. Twenty years later, she returned to the parched lakebed to bury her accumulated treasure. Confronted and tortured at gunpoint by the impoverished Trout and Linda Walker, Kate was bitten by a lethal yellow-spotted lizard. She died laughing defiantly, warning them that their descendants could dig for a hundred years and never find her gold.
+
+---
+
+### Sam the Onion Man
+![Sam the Onion Man](assets/sam_box.png)
+*Sam the Onion Man, portrayed by Dulé Hill.*
+
+- **Vocation**: Herbalist, botanist, builder, and onion cultivator.
+- **Companions**: His loyal, fifty-year-old donkey **Mary Lou** and his wooden rowboat.
+- **Philosophy & Catchphrase**: *"I can fix that."* Whenever Katherine lamented any decay in her schoolhouse, Sam repaired it with devoted craftsmanship.
+- **Herbal Knowledge**: Possessed profound knowledge of the medicinal, nutritional, and repellent properties of sweet mountain onions. His natural onion remedies cured ailments, promoted longevity, and miraculously repelled venomous yellow-spotted lizards.
+- **Martyrdom**: Brutally murdered on Green Lake by Trout Walker purely because of the color of his skin, triggering the supernatural 110-year drought.
+
+---
+
+### Charles "Trout" Walker
+![Charles Trout Walker](assets/charles_trout_walker.jpg)
+*Charles "Trout" Walker, portrayed by Scott Plank.*
+
+- **Social Standing**: Heir to the richest landowner dynasty in 19th-century Green Lake.
+- **Affliction & Nickname**: Born with a severe foot fungus condition causing his feet to smell perpetually of decomposing, rotting fish, earning him the moniker "Trout."
+- **Legacy of Ruin**: After murdering Sam and precipitating the environmental collapse of Green Lake, Trout lost his fortune as the lake dried up. He married Linda Miller and initiated the maniacal, generational search for Kate Barlow's treasure that would consume his descendants down to the Warden.
+
+---
+
+### Linda Miller Walker
+![Linda Walker](assets/linda_walker_box.png)
+- **Background**: Former elementary student of Katherine Barlow who grew up to marry Trout Walker for his wealth.
+- **Role**: Co-conspirator who tracked down the aging Kate Barlow, held her hostage with a shotgun, and subsequently passed the obsessive treasure quest to her children and grandchild, Louise Walker.
+
+---
+
+### The Sheriff of Green Lake
+- **Significance**: Represents moral decay and institutional dereliction of duty in the 19th-century American South. Rather than enforcing the law and protecting citizens from mob violence, he demanded sexual favors (a kiss) from Katherine Barlow before being executed as her first outlaw victim.
+
+---
+
+## The Latvian Origins and the Yelnats Family Genealogy
+
+![Elya Yelnats](assets/elya_yelnats.png)
+*Elya Yelnats, portrayed by Damien Luvara.*
+
+### Elya Yelnats
+- **Origin**: 19th-century rural Latvia.
+- **Significance**: Stanley's great-great-grandfather, colloquially branded by generations of Yelnats descendants as the "no-good-dirty-rotten-pig-stealing-great-great-grandfather."
+- **The Pig Pact**: Infatuated with the shallow Myra Menke, Elya sought help from Madame Zeroni. In exchange for a piglet that grew larger as Elya carried it up a mountain daily while singing a sacred lullaby, Elya pledged to carry Madame Zeroni up the mountain so she could drink from the pure spring and hear the song.
+- **The Curse Initiated**: Disillusioned by Myra's stupidity on the wedding day, Elya abandoned the pig and boarded a ship for America, inadvertently forgetting his solemn promise to Madame Zeroni. The broken oath invoked a multi-generational curse of catastrophic misfortune upon his bloodline.
+
+---
+
+### Madame Zeroni
+![Madame Zeroni](assets/madame_zeroni.webp)
+*Madame Zeroni, portrayed with iconic majesty by Eartha Kitt.*
+
+- **Heritage**: Wise Egyptian elder residing in 19th-century Latvia.
+- **Physical Traits**: Missing both feet; relied on a small wooden cart and crutches.
+- **Relationship**: Direct ancestor (great-great-grandmother) of Hector Zeroni ("Zero").
+
+![Warning of Madame Zeroni](assets/warning_elya_yelnats.png)
+*Madame Zeroni delivers her fateful warning to Elya Yelnats.*
+
+- **The Warning**: Forewarned Elya that if he failed to carry her up the mountain to drink from the stream and hear the lullaby, he and all his descendants would be cursed for eternity.
+
+---
+
+### Myra Menke, Morris Menke & Igor Barkov
+- **Myra Menke**: The beautiful but utterly vacuous Latvian girl courted by Elya and Igor Barkov. Her father, Morris Menke, offered her hand to whichever suitor provided the heaviest pig. When the pigs tied in weight, Myra proposed picking a random number between one and ten, shattering Elya's romantic illusions.
+- **Igor Barkov**: An older, crude, and wealthy pig farmer who competed against Elya for Myra's hand.
+
+---
+
+### Sarah Miller Yelnats
+- **Significance**: Elya's sensible, intelligent, and loving American wife. She taught Elya English and translated the original Latvian lullaby into the iconic English rhyme: *"If only, if only, the woodpecker sighs / The bark on the tree was just a little bit softer..."*
+
+---
+
+### Stanley Yelnats I, II, and III
+![Stanley Yelnats I Robbed](assets/stanley_yelnats_i_robbed.png)
+*Stanley Yelnats I stranded in the desert by Kissin' Kate Barlow.*
+
+- **Stanley Yelnats I**: Elya's son. Made a vast fortune in New York securities, only to be robbed of his heavy trunk by Kissin' Kate Barlow while moving to California. Marooned without water, he survived for weeks in the desert after finding refuge on **"God's Thumb."**
+- **Stanley Yelnats II**: Grandfather of Stanley IV; endured lifelong economic hardship and bad luck.
+- **Stanley Yelnats III**: Stanley IV's father; an impoverished, tireless inventor working on an eco-friendly cure for foot odor. He finally succeeds on the exact afternoon his son breaks the curse on God's Thumb, inventing **"Sploosh."**
+
+---
+
+## Supporting and Minor Characters
+
+- **Clyde "Sweet Feet" Livingston**: Famous Major League Baseball outfielder with severe foot perspiration issues. His charitable shoe donation catalyzed the plot, and he later stars in national television advertisements for the Yelnats family's product, Sploosh.
+- **Ms. Carla Morengo**: Stanley's dedicated patent and defense attorney. She investigates Derrick Dunne's bullying confession, travels to Camp Green Lake, and successfully secures the immediate release of both Stanley and Zero.
+- **Derrick Dunne**: The small middle-school bully who stole Stanley's notebook and flushed his sneakers down a school toilet, inadvertently providing Stanley with an ironclad legal alibi proving he could not have stolen Clyde Livingston's sneakers.
+
+---
+
+## Comprehensive Character Matrix Table
+
+| Character | Camp Nickname | Historical Era | Key Symbolic Motif | Narrative Arc / Ultimate Fate |
+|---|---|---|---|---|
+| **Stanley Yelnats IV** | Caveman | Modern Day | Palindrome, Shovel, God's Thumb | Matures (*bildungsroman*); lifts curse; inherits $1 million |
+| **Hector Zeroni** | Zero | Modern Day | Math, Sploosh, Lullaby | Overcomes illiteracy; escapes tyranny; reunited with mother |
+| **Louise Walker** | The Warden | Modern Day | Rattlesnake Venom, Authority | Exposed; arrested; Camp Green Lake sold to Girl Scouts |
+| **Marion Sevillo** | Mr. Sir | Modern Day | Sunflower Seeds, Burlap Sack | Subdued by Texas authorities; arrested for penal crimes |
+| **Dr. Pendanski** | Mom | Modern Day | Deceptive Compassion, Erased Files | Discredited; dismissed from Texas state civil service |
+| **Rex Washburn** | X-Ray | Modern Day | Pig Latin, Golden Tube, Hierarchy | Released upon the closure of Camp Green Lake |
+| **Theodore Johnson** | Armpit | Modern Day | Physical Might, *Small Steps* | Rehabilitated; stars in companion novel *Small Steps* |
+| **José** | Magnet | Modern Day | Sticky Fingers, Sunflower Seeds | Discharged upon camp disbandment |
+| **Ricky** | Zigzag | Modern Day | Erratic Violence, Shovel Attack | Released following closure |
+| **Alan** | Squid | Modern Day | Tough Mask, Mother's Phone Call | Shows remorse; sends message of love to his mother |
+| **Brian** | Twitch | Modern Day | Car Addiction, Shifting Gears | Transferred/released |
+| **Lewis / Louis** | Barf Bag | Modern Day | Snakebite Escape | Hospitalized; freed from forced labor |
+| **Katherine Barlow** | Kissin' Kate | 1888 Green Lake | Spiced Peaches, Red Lipstick | Slain by yellow-spotted lizard; dies laughing |
+| **Sam the Onion Man** | The Onion Man | 1888 Green Lake | Sweet Onions, *"I can fix that"* | Lynched on lake; martyrdom starts 110-year drought |
+| **Charles Walker** | Trout | 1888 Green Lake | Rotting Fish Odor, Motorboat | Destitute; dies during drought digging for gold |
+| **Elya Yelnats** | Ancestor | 1850s Latvia | Piglet, Broken Oath | Dies in America burdened with generational regret |
+| **Madame Zeroni** | Seer | 1850s Latvia | Missing Feet, The Lullaby | Avenged and reconciled 110 years later through Hector |
