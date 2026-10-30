@@ -1,0 +1,1119 @@
+# -*- coding: utf-8 -*-
+"""
+Build Printable Study Suite for Louis Sachar's Holes:
+1. documents/10_Printable_Character_Sheets_and_Master_Summaries.md
+2. documents/10_Printable_Character_Sheets_and_Master_Summaries.txt
+3. client/printable_study_sheet.html
+"""
+import os
+import re
+
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DOCS_DIR = os.path.join(ROOT_DIR, "documents")
+CLIENT_DIR = os.path.join(ROOT_DIR, "client")
+
+def get_character_sheets_md():
+    return """# Holes (Louis Sachar) — Comprehensive Printable Character Sheets & Literary Profiles
+
+> **Exam Preparation & Revision Syllabus**: This printable character compendium is designed for high-school, GCSE, IGCSE, and IB English Literature students. Every profile details both the **Physical Appearance ("Uiterlijk")** and **Psychological Character Traits ("Karakter")**, along with camp nicknames, character arcs, crucial quotes, and symbolic motif connections across all three narrative timelines.
+
+---
+
+## Table of Contents
+1. [Central Protagonists](#1-central-protagonists)
+   - Stanley Yelnats IV ("Caveman")
+   - Hector Zeroni ("Zero")
+2. [Tent D Campers (Camp Green Lake)](#2-tent-d-campers-camp-green-lake)
+   - Rex Alvin Washburn ("X-Ray")
+   - Theodore Johnson ("Armpit")
+   - José ("Magnet")
+   - Ricky ("Zigzag")
+   - Alan ("Squid")
+   - Brian ("Twitch")
+   - Lewis / Louis ("Barf Bag")
+3. [Camp Administration & Authorities](#3-camp-administration--authorities)
+   - The Warden (Ms. Louise Walker)
+   - Marion Sevillo ("Mr. Sir")
+   - Dr. Pendanski ("Mom")
+4. [Historical Figures of 1880s Green Lake](#4-historical-figures-of-1880s-green-lake)
+   - Katherine Barlow ("Kissin' Kate Barlow")
+   - Sam the Onion Man
+   - Charles "Trout" Walker
+   - Linda Miller Walker
+   - The Sheriff of Green Lake
+5. [Ancestral Latvian Lineage (1880s)](#5-ancestral-latvian-lineage-1880s)
+   - Elya Yelnats
+   - Madame Zeroni
+   - Myra Menke, Morris Menke & Igor Barkov
+   - Sarah Miller Yelnats
+6. [Supporting & Modern Characters](#6-supporting--modern-characters)
+   - Stanley Yelnats I, II, and III & Tiffany Yelnats
+   - Clyde "Sweet Feet" Livingston
+   - Ms. Carla Morengo & Derrick Dunne
+   - Hector's Mother
+7. [Executive Character Revision Table](#7-executive-character-revision-table)
+
+---
+
+## 1. Central Protagonists
+
+### Stanley Yelnats IV ("Caveman")
+* **Full Name**: Stanley Yelnats IV
+* **Camp Nickname**: **"Caveman"** — Bestowed ironically by the Tent D boys after Stanley bumps into the Lump and stands his ground, earning their reluctant respect.
+* **Age & Role**: 14 turning 15; Central Protagonist and dynamic focal point; classic *bildungsroman* coming-of-age transformation.
+* **Narrative Era**: Modern Era (1990s, Camp Green Lake, Texas).
+* **Family Lineage**: Son of Stanley Yelnats III (an impoverished, eccentric inventor); great-grandson of Stanley Yelnats I (the stock market investor robbed by Kissin' Kate); great-great-grandson of Elya Yelnats (the Latvian immigrant who failed to carry Madame Zeroni).
+* **Linguistic Device**: **Palindromic Name** — S-T-A-N-L-E-Y spelled backwards is Y-E-L-N-A-T-S. This cyclical device mirrors the novel's thematic architecture of generational destiny, karma, and history repeating itself until the moral loop is broken.
+
+#### Physical Appearance ("Uiterlijk")
+* **Initial Appearance**: At the start of the novel, Stanley is significantly overweight, clumsy, unathletic, and visibly out of shape. He suffers from low stamina, sweated-through clothing, and severe self-consciousness. In New York, his heavy build made him an easy target for cruel bullies like Derrick Dunne.
+* **Physical Transformation**: Months of grueling daily manual labor—digging five-foot deep and five-foot wide circular trenches in packed caliche and clay beneath a blazing 95°F sun—drastically reshape his body. Stanley loses all excess fat, his torso and shoulders thicken with dense muscle, his skin hardens against the desert heat, and his palms develop tough, protective leather calluses. By the time he escapes into the desert, he is capable of carrying a 70-pound teenage boy up a steep mountain slope.
+
+#### Character & Psychological Traits ("Karakter")
+* **Gentle & Polite**: Stanley is inherently compassionate, courteous, and non-violent. Unlike many peers at juvenile detention, he does not possess a criminal temperament or hostility.
+* **Passive Resignation to Ancestral Scapegoating**: Initially, Stanley uses his family's legendary ancestral curse ("no-good-dirty-rotten-pig-stealing-great-great-grandfather") as a psychological crutch to explain away his bad luck, school bullying, and unjust trial. He begins as a passive victim who accepts misfortune without fighting back.
+* **Quiet Moral Courage & Loyalty**: Under adversity, Stanley displays remarkable ethical stamina. He refuses to rat out Magnet for stealing Mr. Sir's sunflower seeds, takes the blame himself, and sacrifices his personal safety. His loyalty to Zero transforms into ferocious courage when he steals the water truck and ventures into an inhospitable desert to rescue him.
+* **Intellectual Patience & Generosity**: He is patient and non-judgmental when tutoring Zero to read and write, quickly recognizing Zero's sharp computational mind rather than treating him like an outcast.
+
+#### Key Quotes
+* *"I am in the right place at the right time."* (Realizes near the end that his wrongful arrest was not a curse, but the necessary path to heal history).
+* *"He didn't want to dig any more holes. But he knew that if he walked out into the desert, he'd die."*
+* *"Zero wasn't a nobody. He was somebody."*
+
+#### Symbols & Motifs
+* **The Shovel**: First an instrument of penal torment; later the tool of shared brotherhood and unearthing ancestral treasure.
+* **The Lullaby ("If Only, If Only")**: Sings it to Zero atop God's Thumb, unconsciously fulfilling the 110-year mountain promise.
+* **Wild Onions & God's Thumb**: Represents physical survival, maternal sanctuary, and spiritual redemption.
+
+---
+
+### Hector Zeroni ("Zero")
+* **Full Name**: Hector Zeroni
+* **Camp Nickname**: **"Zero"** — A dehumanizing label coined by Dr. Pendanski and counselors who claim that "there is nothing inside his head" and that his value is zero.
+* **Age & Role**: Approximately 13–14; Deuteragonist, moral compass, and ancestral catalyst; great-great-grandson of Madame Zeroni.
+* **Narrative Era**: Modern Era (Camp Green Lake).
+
+#### Physical Appearance ("Uiterlijk")
+* **Small & Wiry**: Significantly smaller, shorter, and thinner than all other boys in Tent D. He appears slight and malnourished, a consequence of growing up homeless and starving on urban streets.
+* **Expressive, Guarded Face**: Possesses huge, dark, watchful eyes that constantly observe his surroundings while his mouth remains firmly shut. He wears a faded orange cap and ragged prison jumper that swallows his petite frame.
+* **Lightning Speed & Muscular Agility**: Despite his small stature, Zero's arms and shoulders possess incredible fast-twitch strength and technique. He digs his mandatory five-foot hole faster than anyone else in camp, finishing hours ahead of physically larger boys like Armpit and Zigzag.
+
+#### Character & Psychological Traits ("Karakter")
+* **Stoic Self-Defense & Selective Silence**: Having endured severe trauma, homelessness, and social rejection, Zero protects himself through total silence. He refuses to converse with the counselors because answering their invasive questions only invites mockery.
+* **Brilliant Computational Intelligence**: Contrary to Pendanski's cruel claim, Zero has exceptional mathematical talent. He can calculate math sums in his head in seconds and rapidly masters phonetic literacy once Stanley shows him the alphabet.
+* **Fierce Integrity & Pride**: Zero has immense personal dignity. He refuses to dig holes that serve the Warden's private greed once he realizes what is happening. When Mr. Pendanski spits in his face and commands him to spell "dig," Zero's dignity erupts into direct action: he strikes Pendanski with a shovel and walks into the desert rather than submit to psychological obliteration.
+* **Profound Loyalty & Generosity**: Once Stanley treats him as a human equal, Zero gives him unyielding devotion. He digs Stanley's hole daily, shares his final jar of Sploosh, and confesses the truth about Clyde Livingston's shoes.
+
+#### Key Quotes
+* *"I'm not stupid. I know everybody thinks I am. I just don't like answering their questions."*
+* *"I'll dig your hole, and you teach me how to read."*
+* *"I took them. I didn't know they were famous. I just needed shoes."*
+
+#### Symbols & Motifs
+* **Sploosh (Spiced Peaches)**: Survived on 110-year-old preserved peaches under the wreck of the *Mary Lou*, physically bridging Sam and Kate's era to his own survival.
+* **Madame Zeroni's Mountain Ascent**: Carrying him up God's Thumb breaks the ancient curse.
+
+---
+
+## 2. Tent D Campers (Camp Green Lake)
+
+### Rex Alvin Washburn ("X-Ray")
+* **Camp Nickname**: **"X-Ray"** — Pig Latin for his real first name, Rex (Rex -> Ex-Ray -> X-Ray).
+* **Narrative Role**: The undisputed peer leader and alpha personality of Tent D.
+* **Physical Appearance ("Uiterlijk")**: Small in stature and thin. He wears thick, filthy glasses with Coke-bottle lenses that are constantly smeared with desert dust and sweat. Because of his terrible eyesight, he cannot see small details without bending close.
+* **Character & Personality ("Karakter")**: Politically cunning, charismatic, and manipulative. Despite being one of the smallest and weakest boys physically, X-Ray dominates the tent's social pecking order through sharp social intelligence and an ability to manipulate the camp's reward system. He demands that other boys give him any interesting discoveries so he can obtain a day off from digging.
+* **Key Dynamic with Stanley**: Initial gatekeeper who accepts Stanley into the group; insists that Stanley hand over the gold "KB" lipstick tube so X-Ray can claim the reward and rest day.
+* **Key Quote**: *"The pig Latin thing, it's just my name backwards... You want to be on my good side, Caveman."*
+
+---
+
+### Theodore Johnson ("Armpit")
+* **Camp Nickname**: **"Armpit"** — Earned when a counselor asked for his name during his first week and he quipped that the place smelled like an armpit.
+* **Narrative Role**: Stanley's first bunkmate guide; physically intimidating yet emotionally vulnerable enforcer.
+* **Physical Appearance ("Uiterlijk")**: Massive, broad-shouldered, and physically towering. He has dark skin, heavy arms, and a deep, gruff voice. He looks like a grown man among young teenagers.
+* **Character & Personality ("Karakter")**: Short-tempered when provoked, but capable of gentle camaraderie. He enforces social rules when necessary (e.g., throwing Stanley to the ground when Stanley accidentally uses his real name "Theodore" instead of "Armpit"), but he also shows empathy and is deeply fatigued by the never-ending digging.
+* **Key Quote**: *"My name is Armpit. Don't you ever call me Theodore."*
+
+---
+
+### José ("Magnet")
+* **Camp Nickname**: **"Magnet"** — Earned because his fingers act like magnets, irresistibly attracting other people's property.
+* **Narrative Role**: The camp's agile thief and opportunistic troublemaker.
+* **Physical Appearance ("Uiterlijk")**: Hispanic heritage; medium, slender, agile build with nimble, quick hands and sharp, playful eyes.
+* **Character & Personality ("Karakter")**: Clever, good-humored, and skilled at sleight of hand. He is proud of his sticky fingers and shoplifting skills. He instigates the sunflower seed crisis by snatching Mr. Sir's burlap sack from the water truck, but he lacks the courage to own up when caught, allowing Stanley to take the fall.
+* **Key Quote**: *"My fingers are like little magnets. They can't help it."*
+
+---
+
+### Ricky ("Zigzag")
+* **Camp Nickname**: **"Zigzag"** — Named for the bizarre, unhinged zig-zagging pattern of his thoughts, hair, and movements.
+* **Narrative Role**: The volatile antagonist within Tent D; symbol of institutional psychosis.
+* **Physical Appearance ("Uiterlijk")**: Wild, frizzy, curly blond-brown hair that sticks out in all directions like an electrical storm; a long, narrow neck; sharp, protruding facial features; constantly sunburned, peeling nose.
+* **Character & Personality ("Karakter")**: Paranoic, unpredictable, highly aggressive, and mentally unhinged. The heat, dehydration, and brutal repetition of digging have pushed Ricky toward madness. He becomes dangerously jealous when Zero digs part of Stanley's hole, leading him to viciously assault Stanley in the camp circle.
+* **Key Quote**: *"You think you're better than us, Caveman? Let's see you fight without your little slave!"*
+
+---
+
+### Alan ("Squid")
+* **Camp Nickname**: **"Squid"** — Named for his slippery, loudmouth personality and defensive bluster.
+* **Narrative Role**: Tough-talking follower in the tent hierarchy; reveals the hidden emotional damage of the boys.
+* **Physical Appearance ("Uiterlijk")**: Stocky build with a permanent smirk, pale sunburned skin, and squinting eyes.
+* **Character & Personality ("Karakter")**: Boastful, sarcastic, and eager to mock others to mask his own pain. However, Stanley catches him crying silently on his cot at night. In Chapter 47, Squid reveals his deep remorse and filial longing by whispering to Stanley: *"Tell my mom I'm sorry."*
+* **Key Quote**: *"Hey Caveman, tell my mom... tell her Alan said he was sorry."*
+
+---
+
+### Brian ("Twitch")
+* **Camp Nickname**: **"Twitch"** — Involuntary motor tick and nervous fidgeting caused by car theft impulses.
+* **Narrative Role**: Replacement camper assigned to Tent D after Barf Bag and Zero leave.
+* **Physical Appearance ("Uiterlijk")**: Restless, twitching eyes, trembling fingers, nervously shifting from foot to foot.
+* **Character & Personality ("Karakter")**: Compulsive car thief who admits he cannot look at a parked car without wanting to jump in and drive away. He provides Stanley with unintentional advice on how to start the water truck engine.
+* **Key Quote**: *"I just get this twitch in my fingers whenever I see a nice car."*
+
+---
+
+### Lewis / Louis ("Barf Bag")
+* **Camp Nickname**: **"Barf Bag"** — Infamous camper whose vacant bed Stanley inherits in Chapter 5.
+* **Narrative Role**: Tragic foil showing the desperation required to escape Camp Green Lake.
+* **Physical Appearance ("Uiterlijk")**: Never seen directly in the primary narrative; described through lore.
+* **Character & Personality ("Karakter")**: So psychologically devastated and physically exhausted by the daily digging that he deliberately takes off his boot and socks and steps on a deadly rattlesnake just to get sent to the hospital.
+* **Significance**: Proves that Camp Green Lake is so inhumane that teenagers deliberately seek venomous snakebites as a preferable alternative to digging.
+
+---
+
+## 3. Camp Administration & Authorities
+
+### The Warden (Ms. Louise Walker)
+* **Full Name**: Louise Walker
+* **Official Role**: Head of Camp Green Lake; absolute authority figure; granddaughter of Charles "Trout" Walker and Linda Miller.
+* **Narrative Role**: Primary Modern Antagonist; embodiment of generational greed and corrupt authoritarianism.
+
+#### Physical Appearance ("Uiterlijk")
+* **Statuesque & Menacing**: Tall, imposing woman with pale, leathery, sun-damaged skin, sharp turquoise eyes, and dark red hair pulled tightly back. She wears a tall cowboy hat, rattlesnake-skin boots, and tailored western outfits.
+* **The Crimson Nails**: Her most chilling physical hallmark is her dark red fingernails, painted with homemade polish formulated from **freshly harvested rattlesnake venom**. When wet, the venom is fatal; when dry, it leaves agony and chemical burns upon human skin.
+
+#### Character & Psychological Traits ("Karakter")
+* **Calculating, Sadistic & Deceitful**: The Warden operates Camp Green Lake not as a rehabilitation center, but as an illegal, covert slave-labor strip mine. For three generations, her family has dug the dried lakebed looking for the lost fortune of Kissin' Kate Barlow.
+* **Cold Psychological Dominance**: She rules through terror rather than shouting. She commands absolute subservience from grown men like Mr. Sir and Dr. Pendanski. When Mr. Sir bothers her with petty complaints about stolen sunflower seeds, she slashes his face with her wet venom nails, demonstrating that everyone at Camp Green Lake is utterly disposable to her.
+* **Desperate Obsession**: Her entire identity and sanity have been warped by the obsessive inheritance passed down from Trout Walker. When Stanley and Zero unearth the suitcase, she tries to claim it as family property and is willing to let the boys die in the lizard pit.
+
+#### Key Quotes
+* *"Excuse me? Did I ask for your opinion, Mr. Sir?"*
+* *"It's only toxic while it's wet."* (Murmured as she slashes Mr. Sir's cheek with venom polish).
+* *"They're my holes! Everything found out here belongs to me!"*
+
+---
+
+### Marion Sevillo ("Mr. Sir")
+* **Legal Name**: Marion Sevillo (despises his feminine first name; will physically attack anyone who speaks it).
+* **Title / Role**: Chief Camp Operations Guard and disciplinarian.
+
+#### Physical Appearance ("Uiterlijk")
+* **Intimidating Western Lawman**: Broad, muscular, aging man with a thick sun-baked neck, weathered wrinkles, reflective aviator sunglasses that hide his eyes, and a wide-brimmed Stetson hat.
+* **The Rattlesnake Tattoo**: Has a large, aggressive rattlesnake tattooed across his thick right forearm.
+* **The Venom Scar**: After Chapter 20, the right side of his face is disfigured by three raised, purplish, swollen gashes where the Warden's venomous claws scarred his skin.
+* **Sunflower Seeds**: Chews and spits sunflower seed shells constantly as a furious substitute for cigarettes after quitting smoking.
+
+#### Character & Psychological Traits ("Karakter")
+* **Overtly Sadistic & Vindictive**: Employs open physical intimidation, weaponized dehydration, and relentless verbal abuse.
+* **Petty Cruelty**: After the Warden disfigures him, Mr. Sir takes out his humiliation exclusively on Stanley. When filling canteens, he intentionally pours Stanley's precious water allowance into the desert sand, forcing Stanley to choose between deadly thirst or humiliation.
+* **Key Catchphrase**: *"This ain't a Girl Scout camp!"*
+
+---
+
+### Dr. Pendanski ("Mom")
+* **Title / Role**: Tent D Counselor; supposedly the counselor with psychological and rehabilitative training.
+
+#### Physical Appearance ("Uiterlijk")
+* **Superficially Friendly & Professional**: Younger than Mr. Sir, with curly brown hair, a thick neatly trimmed beard, pale skin that sunburns easily, and a perpetually affable, smiling face. He dresses in khaki counselor shirts and clean boots.
+
+#### Character & Psychological Traits ("Karakter")
+* **Insidious Bureaucratic Hypocrisy**: While Mr. Sir is an honest brute, Dr. Pendanski represents insidious institutional evil. He insists the boys call him "Mom" to fabricate a veneer of maternal warmth and compassion, but beneath this mask lies cold, sociopathic cruelty.
+* **Targeted Dehumanization of Zero**: Pendanski reserves his most toxic cruelty for Hector Zeroni, constantly telling the other campers that Zero has no brain, is incapable of learning, and is worthless.
+* **Criminal Complicity**: When Zero escapes into the desert, Pendanski calmly assists the Warden in erasing Zero's medical, criminal, and identity files from the camp computer mainframe so that if the boy dies of thirst, the state will have no record of his existence.
+
+#### Key Quotes
+* *"You're not a bad kid, Stanley. You just made a mistake... Call me Mom."*
+* *"Zero's not real hard to care for. There's nothing inside his head to worry about."*
+* *"Spit on him, why don't you? Go ahead, Zero, spell 'dig'!"*
+
+---
+
+## 4. Historical Figures of 1880s Green Lake
+
+### Katherine Barlow ("Kissin' Kate Barlow")
+* **Historical Name**: Miss Katherine Barlow / "Kissin' Kate Barlow"
+* **Role**: Green Lake Schoolteacher turned Feared Western Outlaw.
+
+#### Physical Appearance ("Uiterlijk")
+* **The Beloved Schoolteacher**: In 1888, Katherine is described as radiant, warm, and breathtakingly beautiful, with blonde hair, bright blue eyes, rosy cheeks, and simple prairie dresses.
+* **The Feared Outlaw**: Twenty years later, she wears leather riding boots, a wide-brimmed felt hat, gun holsters, and a heavy western duster. Her signature trademark is her bright **red lipstick**, with which she kisses the dead cheek of every man she shoots and robs, leaving a crimson mark in the desert dust.
+
+#### Character & Psychological Traits ("Karakter")
+* **Intellectual Idealism & Deep Compassion**: Originally, Katherine is an educated, loving teacher who cares deeply for the literacy of children and adults alike (teaching Sam poetry and history in exchange for schoolhouse repairs). She makes the finest spiced peaches in Texas, winning blue ribbons at the county fair.
+* **Radicalized by Racism & Injustice**: When the town mob murders Sam simply because a Black man kissed a white woman, Katherine's faith in law, God, and human decency is obliterated. She kills the corrupt sheriff who refused to protect Sam, kisses his dead face, and dedicates her life to punishing the wealthy aristocracy of Texas (especially Trout Walker).
+* **Defiant unto Death**: When Trout and Linda corner her 20 years later on the dry lakebed to torture her for her buried gold, Katherine laughs in their faces. Bitten by a deadly yellow-spotted lizard, she dies laughing, knowing they will dig for a hundred years and never find her treasure.
+
+#### Key Quotes
+* *"I found him in the lake... and now I'll give you something to remember me by."*
+* *"You and your children and their children can dig for the next hundred years and you will never find it!"*
+
+---
+
+### Sam the Onion Man
+* **Name**: Sam
+* **Occupation**: Farmer, healer, and tradesman in 1888 Green Lake; owner of the beloved donkey Mary Lou.
+* **Narrative Role**: Tragic Martyr; moral ancestor of racial harmony and ecological balance.
+
+#### Physical Appearance ("Uiterlijk")
+* Tall, lean African-American man with kind, gentle eyes, strong work-worn hands, a calm smile, and simple denim farmer overalls. He rows his boat across the pristine lake and walks the streets leading his 50-year-old donkey, Mary Lou.
+
+#### Character & Psychological Traits ("Karakter")
+* **Encyclopedic Natural Knowledge**: Sam understands the natural pharmacopeia of the desert. His secret wild onion patch on the mountain produces miraculous medicinal sweet onions that cure baldness, stomach aches, and snakebite fever.
+* **Gentle Dignity & Generosity**: Quiet, soft-spoken, and deeply loving. He lovingly repairs Katherine's schoolhouse roof and windows, sharing poetry and philosophy with her.
+* **Tragic Victim of Jim Crow Violence**: Because Texas law forbade African-Americans from attending school or having romantic relationships with white women, Sam is hunted down like an animal by Trout Walker's mob and shot to death on the lake.
+* **Key Catchphrase**: *"I can fix that."*
+
+---
+
+### Charles "Trout" Walker
+* **Full Name**: Charles Walker
+* **Moniker**: "Trout" — Earned because of an incurable foot fungus that made his feet reek of rotting fish.
+* **Narrative Role**: Historical Antagonist; patriarchal ancestor of The Warden.
+
+#### Physical Appearance ("Uiterlijk")
+* Heavy-set, arrogant young heir with slicked hair, expensive tailored suits, polished leather riding boots, and a motorized lake boat (the only one on Green Lake). Emits an offensive odor of decaying fish from his feet.
+
+#### Character & Psychological Traits ("Karakter")
+* **Entitled, Narcissistic & Racist**: The son of the wealthiest family in Green Lake, Trout believes his money entitles him to buy whatever he desires, including Katherine Barlow. When Katherine rejects his marriage proposal in favor of Sam, his wounded ego incites the town lynching, leading to the destruction of the schoolhouse and Sam's murder.
+* **Generational Ruin**: Left destitute after the 110-year drought dries up the lake, Trout spends the rest of his life obsessively scouring the desert for Kate Barlow's buried millions, passing his bankrupt obsession down to his granddaughter Louise.
+
+---
+
+### Linda Miller Walker
+* **Name**: Linda Miller Walker
+* **Role**: Katherine Barlow's former student who marries Trout Walker for money.
+* **Appearance & Character**: Beautiful schoolgirl turned haggard, greedy, desperate co-conspirator. She helps Trout corner and torture Katherine in the desert in 1898, exemplifying how greed corrupts innocent youth.
+
+---
+
+### The Sheriff of Green Lake
+* **Role**: The cowardly legal official of 1888 Green Lake.
+* **Appearance & Character**: Drunken, corrupt lawman who refuses to stop the lynch mob, demands a kiss from Katherine in exchange for Sam's life, and is later shot dead by Katherine, becoming Kissin' Kate's first victim.
+
+---
+
+## 5. Ancestral Latvian Lineage (1880s)
+
+### Elya Yelnats
+* **Full Name**: Elya Yelnats
+* **Role**: Stanley IV's Latvian great-great-grandfather; original progenitor of the family curse.
+* **Appearance ("Uiterlijk")**: A broad, earnest, 15-year-old Latvian farm boy with naive eyes, shaggy hair, and simple peasant clothing.
+* **Character ("Karakter")**: Well-meaning, romantic, but immature and impetuous. In love with the empty-headed Myra Menke, he accepts Madame Zeroni's deal to carry a piglet up the mountain. When Myra cannot choose between him and Igor Barkov, Elya realizes her utter shallowness and refuses to marry her, boarding a ship to America. However, in his shame and haste, he breaks his sacred promise to carry Madame Zeroni up the mountain, triggering the 110-year curse.
+
+---
+
+### Madame Zeroni
+* **Full Name**: Madame Zeroni
+* **Role**: Egyptian-Latvian mystic, prophetess, and matriarch; Hector Zeroni's great-great-grandmother.
+* **Appearance ("Uiterlijk")**: Elderly woman with missing legs, dark piercing eyes, a deeply wrinkled face, and a booming, resonant voice. She is carried around in a wooden cart or chair.
+* **Character ("Karakter")**: Extremely wise, blunt, and morally rigorous. She sees through Myra Menke's vacuousness and warns Elya against her. She gives him the pig and teaches him the ancient lullaby song, placing a solemn curse on him only if he breaks his vow of gratitude.
+
+---
+
+### Myra Menke, Morris Menke & Igor Barkov
+* **Myra Menke**: 14-year-old Latvian peasant girl with a pretty face but an empty mind (*"her head is as empty as a flowerpot"*). Unable to choose between Elya's pig and Igor's pig, she asks them to guess a number between 1 and 10, proving Madame Zeroni's judgment correct.
+* **Morris Menke**: Myra's father, who treats his daughter like livestock to be auctioned off for the fattest pig.
+* **Igor Barkov**: An elderly, foul-smelling Latvian pig farmer who competes with Elya for Myra's hand.
+
+---
+
+### Sarah Miller Yelnats
+* **Role**: Elya's intelligent, loving American wife in New York.
+* **Significance**: Sarah provides Elya with genuine partnership, wisdom, and love. She translates Madame Zeroni's Latvian lullaby into the English rhyme (*"If only, if only, the woodpecker sighs..."*), preserving the ancestral melody for four generations.
+
+---
+
+## 6. Supporting & Modern Characters
+
+### Stanley Yelnats I, II, III & Tiffany Yelnats
+* **Stanley Yelnats I**: Elya's son; made a fortune on the New York stock exchange, only to be robbed of his metal suitcase by Kissin' Kate Barlow in the Texas desert; survived for weeks by finding refuge on **"God's Thumb."**
+* **Stanley Yelnats III**: Stanley's father; an impoverished, tireless, optimistic inventor working on recycling old sneakers and curing foot odor in a tiny, cramped, foul-smelling New York apartment. His breakthrough comes on the exact day Stanley breaks the curse.
+* **Tiffany Yelnats**: Stanley's mother; loving, supportive, and grounded; she writes warm letters to Stanley at camp and never stops believing in him.
+
+---
+
+### Clyde "Sweet Feet" Livingston
+* **Role**: Famous Major League Baseball superstar and MVP for the Texas Rangers.
+* **Physical Description**: Athletic, charismatic, and imposing celebrity sports figure.
+* **Character Traits**: Generous and proud of his humble beginnings; donates his game-worn sneakers to raise money for a homeless shelter. Once the mystery is solved, he drops all charges against Stanley and endorses Stanley III's "Sploosh" foot spray.
+
+---
+
+### Ms. Carla Morengo & Derrick Dunne
+* **Ms. Carla Morengo**: Stanley's sharp, fearless, impeccably professional defense attorney. She investigates Stanley's case, proves Derrick Dunne stole his notebook at 3:20 PM, marches into Camp Green Lake with a writ of habeas corpus, and saves both Stanley and Zero from the Warden.
+* **Derrick Dunne**: The small, aggressive school bully who tormented Stanley at school and flushed his notebook down the toilet—the very act that established Stanley's alibi for the sneaker theft.
+
+---
+
+### Hector's Mother
+* **Role**: Hector Zeroni's lost mother.
+* **Significance**: Separated from Zero when he was a toddler after instructing him to wait for her at the park; she never stopped searching for him. At the novel's joyous conclusion, Zero uses his wealth from the suitcase to hire private investigators to find her, and she sings the final verse of the lullaby to him.
+
+---
+
+## 7. Executive Character Revision Table
+
+| Character | Camp Nickname | Era & Setting | Physical Appearance ("Uiterlijk") | Psychological Traits ("Karakter") | Critical Narrative Role | Key Symbol / Motif |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Stanley Yelnats IV** | Caveman | Modern (1990s) | Initially overweight & clumsy; transforms into lean, muscular youth with callused hands | Polite, empathetic, loyal, quietly resilient; overcomes passivity to become a moral hero | Central Protagonist; carries Zero; unearths the buried chest | Shovel, Palindrome, God's Thumb, Onions |
+| **Hector Zeroni** | Zero | Modern (1990s) | Small, skinny, wiry, huge dark eyes, fast hands; ragged clothes | Stoic, dignified, mathematically brilliant, fiercely loyal, highly observant | Deuteragonist; catalyst for breaking the 110-year curse; steals shoes | Sploosh, Literacy, The Lullaby |
+| **Rex Washburn** | X-Ray | Modern (1990s) | Small, thin; thick dirty glasses, poor eyesight | Charismatic, politically savvy, manipulative peer leader of Tent D | Alpha camper; takes credit for finding the KB lipstick tube | Glasses, Caliche, Day Off |
+| **Theodore Johnson** | Armpit | Modern (1990s) | Massive, broad, towering black youth, deep voice | Short-tempered when provoked, yet capable of warmth and weary solidarity | Tent D enforcer; warns Stanley about camp social codes | Sweat, Shovel length, Nicknames |
+| **José** | Magnet | Modern (1990s) | Slender, nimble, agile Hispanic youth with quick hands | Mischievous, comedic, skilled thief; lacks moral courage under pressure | Steals Mr. Sir's sunflower seeds, triggering the Warden confrontation | Sunflower Seeds, Burlap Sack |
+| **Ricky** | Zigzag | Modern (1990s) | Frizzy blond-brown hair sticking out wildly, long neck, sunburned | Paranoic, aggressive, mentally frayed by heat and digging | Attacks Stanley in a fit of jealousy over Zero digging for him | Cracking Caliche, Violence |
+| **Alan** | Squid | Modern (1990s) | Stocky build, sneering expression, pale skin | Sarcastic bluster masking emotional vulnerability and filial longing | Toughest talker who cries at night; asks Stanley to tell his mom he's sorry | Crying in the dark, Regret |
+| **Louise Walker** | The Warden | Modern (1990s) | Tall, leathery skin, red hair, turquoise eyes, cowboy boots | Ruthless, cold, manipulative; uses camp as private strip mine | Primary Antagonist; heir to Trout Walker's gold obsession | Rattlesnake Venom Nail Polish |
+| **Marion Sevillo** | Mr. Sir | Modern (1990s) | Stetson, aviators, rattlesnake tattoo, venom-scarred face | Cruel, aggressive, vindictive; weaponizes water canteen | Camp guard; takes out humiliation on Stanley | Aviator glasses, Spilled Water |
+| **Dr. Pendanski** | Mom | Modern (1990s) | Clean beard, friendly smile, khaki clothes, pale sunburned skin | Smug, sociopathic, hypocritical; hides malice behind counseling veneer | Cruel counselor; deletes Zero's files; instigates Zero's flight | Spilled Canteen, Computer Files |
+| **Katherine Barlow** | Kissin' Kate | 1888 Green Lake | Radiant blonde beauty in dress; transforms into gunslinging outlaw | Idealistic educator turned vengeful bandit after Sam's murder | Legendary outlaw; robs Stanley I; buries the treasure; kills sheriff | Red Lipstick, Spiced Peaches |
+| **Sam** | Onion Man | 1888 Green Lake | Lean, handsome African-American man, gentle eyes, overalls | Wise, loving, skilled healer, calm; deeply respectful of nature | Martyr whose murder triggers the 110-year drought and curse | Mary Lou, Wild Sweet Onions |
+| **Charles Walker** | Trout | 1888 Green Lake | Heavy, wealthy heir, slick hair, foul-smelling feet | Entitled, racist, arrogant, destructive; cannot accept rejection | Instigates the lynch mob; ruins Green Lake; searches for gold | Rotten Fish Odor, Motorboat |
+| **Elya Yelnats** | N/A | 1880s Latvia | 15-year-old broad, naive peasant farm boy | Well-meaning, romantic, impulsive, honorable yet forgetful | Breaks promise to Madame Zeroni; triggers the 110-year curse | The Runt Pig, Immigrant Ship |
+| **Madame Zeroni** | N/A | 1880s Latvia | Elderly Egyptian-Latvian woman with missing legs in a cart | Insightful, blunt, prophetic, morally rigorous | Gives Elya the pig and the lullaby; curses unfulfilled oaths | The Mountain Stream, Lullaby |
+
+---
+"""
+
+def get_master_summary_md():
+    return """# Holes (Louis Sachar) — Master Novel Summary & Literary Analysis
+
+> **Academic Overview**: Louis Sachar's *Holes* (published in 1998, winner of the Newbery Medal and National Book Award) is an intricately plotted, multi-generational literary fable that masterfully intertwines folklore, realism, social satire, and myth. This master summary synthesizes the narrative architecture, step-by-step plot developments, climax, resolution, and core thematic arguments for GCSE, IGCSE, and A-Level English Literature examinations.
+
+---
+
+## 1. Narrative Architecture & The Three Converging Timelines
+
+The brilliant structural achievement of *Holes* lies in its **three-tier temporal tapestry**. While the primary narrative occurs in the modern 1990s, Sachar continuously splices in two historical timelines that provide the karmic, ecological, and psychological explanations for every modern event:
+
+```
+[Era A: 1880s Latvia] ---> Elya Yelnats & Madame Zeroni (The Origin of the Family Curse)
+                                  |
+                                  v (110 Years of Karmic Misfortune)
+[Era B: 1888 Green Lake] -> Katherine Barlow & Sam (Racial Violence, Drought, & Stolen Gold)
+                                  |
+                                  v (The Dried Lakebed & The Hidden Treasure)
+[Era C: 1990s Modern] ----> Stanley Yelnats IV & Hector Zeroni (Camp Green Lake Redemption)
+```
+
+1. **Era A (1880s Latvia)**: Young Elya Yelnats falls in love with the vacuous Myra Menke and seeks the counsel of Madame Zeroni. Madame Zeroni gives him a runt piglet, instructing him to carry it up the mountain every day to drink from the sweet stream while singing a special lullaby. In exchange, Elya vows to carry Madame Zeroni up the mountain. When Elya realizes Myra's shallowness, he flees to America, breaking his sacred vow. Madame Zeroni's curse follows the Yelnats family for four generations.
+2. **Era B (1888 Green Lake, Texas)**: Green Lake is a flourishing, fertile paradise. Schoolteacher Katherine Barlow falls in love with Sam, an African-American onion seller and healer. When the racist town mob, led by rejected suitor Trout Walker, discovers their interracial romance, they lynch Sam and slaughter his donkey Mary Lou. In that exact moment, rain ceases to fall on Green Lake, initiating a 110-year drought. Katherine transforms into the notorious bandit *Kissin' Kate Barlow*, robbing banks and stealing the metal suitcase of Stanley Yelnats I before dying of a yellow-spotted lizard bite while mocking Trout Walker.
+3. **Era C (1990s Camp Green Lake)**: Stanley Yelnats IV is wrongfully convicted of stealing baseball star Clyde Livingston's sneakers and sent to Camp Green Lake—a juvenile labor camp where boys are forced to dig circular holes five feet deep and five feet wide. Under the guidance of the Warden (Trout Walker's granddaughter), the camp is secretly an illegal strip-mine scouring the dried lakebed for Kate Barlow's buried millions.
+
+---
+
+## 2. Complete Chronological Plot Progression
+
+### Exposition: Wrongful Arrest and the Penal Mirage
+Fourteen-year-old Stanley Yelnats IV arrives at Camp Green Lake in handcuffs after an eight-hour bus ride across Texas. Innocent of any crime, Stanley was walking under a freeway overpass when a pair of smelly sneakers fell from the sky, striking him on the head. Unaware that they were donated by MVP baseball legend Clyde "Sweet Feet" Livingston to a homeless charity auction, Stanley ran home hoping the shoes would aid his father's research into recycling sneakers. Arrested for grand larceny, the judge gives him a choice: regular jail or Camp Green Lake. Choosing the camp because his poor family could never afford summer camp, Stanley arrives to find a parched wasteland with no lake, no trees, and venomous fauna.
+
+### Rising Action: The Discipline of the Shovel
+Stanley is assigned to Tent D under the supervision of Mr. Sir (a brutal guard who chews sunflower seeds and wears aviator shades) and Dr. Pendanski (a counselor who insists on being called "Mom" while practicing passive-aggressive cruelty). Stanley is issued a five-foot shovel and told that every day, including weekends, he must dig a hole five feet deep and five feet across. The official penal dogma claims manual labor builds character, but the true purpose is concealed.
+
+Stanley befriends the boys of Tent D: X-Ray (the short, blind leader), Armpit, Magnet, Zigzag, Squid, and Zero (a silent boy whom the counselors dismiss as brainless). Stanley earns the nickname "Caveman" and survives the grueling physical agony of his first hole, developing calluses and muscular endurance.
+
+### The Catalytic Discoveries & The Warden's Arrival
+While digging, Stanley unearths a fossilized fish (rejected by the Warden) and later finds a small, engraved gold cylinder: the lipstick tube of **Kissin' Kate Barlow**, inscribed with the initials **KB** inside a heart. Knowing the strict camp hierarchy, Stanley yields the tube to X-Ray so X-Ray can claim the reward: a day off and double water rations.
+
+When X-Ray "finds" the tube the next morning, the Warden—Louise Walker—arrives in person. She immediately orders the boys to dig in concentrated, circular grids around X-Ray's hole. Stanley realizes that Camp Green Lake is not a correctional institution; the Warden is desperately searching for something specific buried in the dried lakebed.
+
+### The Literacy Pact and the Camp Crisis
+When Magnet steals a burlap sack of sunflower seeds from Mr. Sir's truck, the bag spills into Stanley's hole. Stanley takes the blame, is brought to the Warden's cabin, and witnesses the Warden slash Mr. Sir's face with fingernails painted with **rattlesnake venom polish**. Shaken by the camp's lethal reality, Stanley returns to his hole.
+
+Zero approaches Stanley and asks to learn how to read. They forge a secret alliance: Zero will dig an hour of Stanley's hole each day, and in return, Stanley will tutor Zero in literacy. Zero rapidly demonstrates exceptional mathematical and analytical intelligence. However, the other campers grow resentful of Zero digging for Stanley. A violent brawl erupts when Zigzag attacks Stanley. When Dr. Pendanski humiliates Zero by spitting on him and mocking his inability to spell "dig," Zero snaps: he smashes Pendanski across the face with his shovel and marches out into the deadly desert wasteland.
+
+### Climax: The Wasteland Trek and The Miracle on God's Thumb
+To cover up their incompetence, the Warden and Pendanski erase all digital and physical records of Hector Zeroni so the state will have no record of his existence when he dies of thirst. Consumed by guilt, Stanley attempts to steal the camp water truck to rescue his friend, but accidentally crashes it into a hole. He flees on foot into the desert.
+
+Stanley follows a mirage toward a distant mountain resembling a giant clenched fist with a thumb sticking up—**"God's Thumb,"** the exact landmark where his great-grandfather survived a century earlier. In the middle of the desert, Stanley discovers Zero sheltered beneath the overturned hull of the *Mary Lou*—Sam's historical onion boat. Zero has survived for days by eating jars of 110-year-old preserved spiced peaches, which he calls **"Sploosh."**
+
+Together, the starving, dehydrated boys hike toward God's Thumb. As the terrain steepens, Zero collapses from agonizing stomach cramps caused by bacteria in the old peaches. In an act of ultimate sacrificial love, Stanley lifts Zero onto his shoulders and carries him up the sheer cliff face. At the mountain summit, Stanley stumbles into a muddy ditch, discovering freshwater and a patch of wild sweet onions—Sam's historical healing garden. Stanley feeds Zero water and onions and sings the ancient lullaby:
+> *"If only, if only, the woodpecker sighs / The bark on the tree was as soft as the skies..."*
+
+Unbeknownst to Stanley, he has just fulfilled the 110-year-old broken promise of Elya Yelnats: he carried a Zeroni up the mountain, allowed him to drink from the sweet water, and sang the song. The ancestral curse is broken.
+
+### Falling Action: The Final Dig and the Lizard Pit
+Restored by onions and water, Zero confesses that he was the one who stole Clyde Livingston's sneakers from the homeless shelter; having no shoes, he took them, but threw them over the overpass when police sirens sounded, where they struck Stanley. Stanley forgives him completely.
+
+The boys formulate a daring plan: sneak back into Camp Green Lake at night, dig in the exact hole where Stanley originally found the KB lipstick tube, and steal the buried treasure before escaping. In the dead of night, they uncover a heavy metal suitcase.
+
+As Stanley lifts the chest, flashlight beams illuminate them: the Warden, Mr. Sir, and Dr. Pendanski have surrounded the hole. However, the adults cannot touch them: the pit is swarming with deadly **yellow-spotted lizards**, which crawl over Stanley and Zero's bodies, faces, and clothes. Miraculously, the lizards do not bite: they detest the smell and taste of onion blood, and the boys have eaten nothing but wild onions for a week!
+
+### Resolution & Restorative Justice
+At daybreak, Stanley's attorney, Ms. Carla Morengo, arrives with the Texas Attorney General, bearing a court order for Stanley's immediate release after proving his alibi (Derrick Dunne stole his notebook at the exact minute the shoes were taken). The Warden attempts to claim the suitcase as family property, but Zero points to the painted lettering on the leather lid: **STANLEY YELNATS**. It is the identical suitcase stolen from Stanley's great-grandfather in 1888.
+
+Because the camp has erased all official files on Hector Zeroni, the Attorney General refuses to allow Pendanski to detain him, and Zero is released alongside Stanley. Camp Green Lake is permanently shut down, and the Warden is forced to sell her ancestral land, which is converted into a Girl Scout camp (fulfilling Mr. Sir's ironic catchphrase).
+
+As the boys drive away, heavy clouds gather and rain falls on Green Lake for the first time in 110 years, ending the century-old drought. The suitcase contains over $1 million in negotiable stock certificates and jewelry, splitting into nearly $500,000 for each boy. Stanley's father perfects his peach-and-onion foot odor elimination spray, naming it **"Sploosh,"** endorsed by Clyde Livingston. Zero uses his wealth to hire private investigators and reunites with his lost mother, who softly sings the final verse of the lullaby at their victory celebration.
+
+---
+
+## 3. Master Thematic Analysis (GCSE / Exam Syllabus)
+
+### Theme 1: Fate, Providence, and Moral Agency
+While the novel heavily features folkloric motifs like family curses and karmic balance, Sachar argues that fate is not a passive doom. Misfortune (the falling shoes, the trial, the camp) places Stanley in the precise coordinates required to redeem his family line, but it requires active moral agency—choosing to rescue Zero, choosing to carry him up the mountain, and choosing to forgive—to transform bad luck into providential salvation.
+
+### Theme 2: Institutional Injustice and Cruelty
+Camp Green Lake exposes the grotesque hypocrisy of penal institutions. Disguised as a rehabilitative character-building facility for youth, it is revealed to be an exploitative labor camp run by corrupt bureaucrats who erase human beings from computer mainframes when convenient. Sachar contrasts official institutional law with genuine ethical justice.
+
+### Theme 3: Racism, Segregation, and Historical Memory
+The tragedy of Katherine Barlow and Sam exposes the brutal reality of American racial violence in the nineteenth century. Sam's lynching is the moral catastrophe that curses the land and destroys the community. Sachar demonstrates that an unaddressed legacy of racial violence leaves a society morally and ecologically barren until historical restitution is achieved.
+
+### Theme 4: Authentic Friendship and Sacrificial Solidarity
+The relationship between Stanley and Zero subverts the toxic, transactional social hierarchy of the camp. While other boys trade favors and enforce dominance, Stanley and Zero share labor, literacy, food, and life itself. True friendship is depicted as the ultimate force capable of breaking generational trauma.
+"""
+
+def get_chapter_summaries_md():
+    return """# Holes (Louis Sachar) — Grouped 5-Chapter Analytical Summaries (Chapters 1 to 50)
+
+> **Structured Revision Syllabus**: This module divides all 50 chapters of Louis Sachar's *Holes* into ten sequential five-chapter blocks. Each block provides an in-depth plot synopsis, character development arcs, critical quotes, symbolism & motifs, and high-yield exam practice questions with model answers.
+
+---
+
+## Module 1: Chapters 1 – 5
+**Focus**: Entering Camp Green Lake, Mr. Sir, Tent D, and the Rules of the Shovel
+
+### Detailed Plot Synopsis
+* **Chapter 1**: Introduces the paradox of Camp Green Lake: there is no lake and nothing green. The desert is parched and hot (95°F in shade). Only the Warden owns shade (two oak trees and a hammock). Lethal yellow-spotted lizards, scorpions, and rattlesnakes inhabit the dry lakebed. A lizard bite is 100% fatal.
+* **Chapter 2**: Explains the judicial dilemma: poor boys are given the choice between jail and Camp Green Lake under the official philosophy that digging holes under the hot sun builds character. Stanley Yelnats IV chooses the camp because his impoverished family could never afford summer camp.
+* **Chapter 3**: Stanley endures an eight-hour bus ride in handcuffs. Flashbacks reveal his family's history of poverty, his father's attempts to invent a foot odor cure, the school bully Derrick Dunne, and the family curse blamed on his "no-good-dirty-rotten-pig-stealing-great-great-grandfather," Elya Yelnats. The family lullaby is introduced: *"If only, if only, the woodpecker sighs..."*
+* **Chapter 4**: Stanley meets Mr. Sir, an aggressive guard who chews sunflower seeds after quitting smoking. Mr. Sir issues two orange jumpsuits, a canteen, and a five-foot shovel. He explains there are no fences because the desert has no water for 100 miles: *"This ain't a Girl Scout camp!"*
+* **Chapter 5**: Stanley is assigned to Tent D and meets counselor Mr. Pendanski ("Mom") and his tentmates: X-Ray, Magnet, Armpit, Zigzag, Squid, and Zero. Stanley inherits the vacant cot of Barf Bag (Lewis). Pendanski claims Zero has nothing inside his head.
+
+### Character Transformations & Themes
+* **Stanley**: Passive, naive, bewildered; enters the camp with low self-esteem and submissive deference to authority.
+* **The Camp Hierarchy**: Street nicknames establish a protective social armor for the boys against dehumanizing guards.
+* **Key Motifs**: The palindrome name; the five-foot shovel as a unit of measurement and punishment; water as sovereign power.
+
+### Key Quotes
+* *"This ain't a Girl Scout camp!"* — Mr. Sir
+* *"There is no lake at Camp Green Lake."* — Narrator
+* *"Zero's not real hard to care for. There's nothing inside his head to worry about."* — Dr. Pendanski
+
+### High-Yield Exam Questions
+1. **Why is the name 'Camp Green Lake' an example of dramatic irony?**  
+   *Answer*: Because the camp is located on a bone-dry, scorching desert lakebed where no water or greenery exists.
+2. **What unit of measurement dictates the boys' daily work?**  
+   *Answer*: The shovel—each hole must be exactly five feet deep and five feet wide, measured by the length of the shovel.
+
+---
+
+## Module 2: Chapters 6 – 10
+**Focus**: The Stolen Sneakers, First Hole Dug, Elya Yelnats & Madame Zeroni in Latvia
+
+### Detailed Plot Synopsis
+* **Chapter 6**: Flashback to Stanley's trial. A pair of worn sneakers belonging to baseball MVP Clyde "Sweet Feet" Livingston fell from a highway overpass and hit Stanley on the head. Believing it to be a miracle to assist his father's shoe research, Stanley ran with them, only to be arrested for grand larceny.
+* **Chapter 7**: Stanley digs his very first hole. The caliche clay is rock-hard, blisters tear through his hands, and the heat is suffocating. Parallel flashback to 1880s Latvia: 15-year-old Elya Yelnats loves Myra Menke. Madame Zeroni gives him a runt piglet, instructing him to carry it up the mountain daily to drink while singing a special lullaby. In return, Elya promises to carry Madame Zeroni up the mountain. When Myra cannot choose between Elya and Igor, Elya walks away in disgust, forgets his promise to Madame Zeroni, and sails to America, inaugurating the family curse.
+* **Chapter 8**: Stanley finishes his first hole, barely able to lift his shovel. He spits into the hole, a camp tradition marking ownership and completion.
+* **Chapter 9**: In the Wreck Room, Stanley accidentally bumps into a bully nicknamed the Lump. When Stanley defends himself, the Tent D boys intervene and bestow upon him his official camp nickname: **"Caveman."** Stanley writes an upbeat, deceptive letter to his mother to spare her feelings. Zero peers over his shoulder, fascinated by the letters.
+* **Chapter 10**: Stanley begins his second hole. His muscles are in excruciating pain, but his blistered palms begin hardening into calluses.
+
+### Character Transformations & Themes
+* **Stanley**: Experiences extreme physical trauma; earns acceptance and the identity of "Caveman."
+* **Elya Yelnats**: Foil to Stanley; impulsive and romantic, his broken promise creates the multi-generational debt Stanley must pay.
+* **Key Motifs**: The pig lullaby; spitting in the hole as an act of defiant closure; caliche and blisters.
+
+### Key Quotes
+* *"If only, if only, the woodpecker sighs / The bark on the tree was as soft as the skies..."*
+* *"You're Caveman now. One of us."* — X-Ray
+* *"He felt a strange sense of pride as he looked down at the five-foot hole."*
+
+### High-Yield Exam Questions
+1. **How did Clyde Livingston's sneakers land on Stanley?**  
+   *Answer*: They fell off a highway bridge overpass and struck Stanley directly on the head as he walked beneath it.
+2. **What conditions did Madame Zeroni place on Elya Yelnats regarding the pig?**  
+   *Answer*: Elya had to carry the piglet up the mountain every day to drink from the stream while singing her lullaby, and then carry Madame Zeroni up before departing for America.
+
+---
+
+## Module 3: Chapters 11 – 15
+**Focus**: The Fish Fossil, The Gold "KB" Lipstick Tube, X-Ray's Influence, and The Warden
+
+### Detailed Plot Synopsis
+* **Chapter 11**: Stanley continues digging and contemplates the camp pecking order. X-Ray informs Stanley that if he finds anything interesting, he must give it to X-Ray because X-Ray has been at camp the longest and deserves a day off.
+* **Chapter 12**: Dr. Pendanski holds a counseling circle with Tent D, asking the boys what they want to do with their lives after release. Magnet wants to train animals; Armpit wants to work in a kennel. When Pendanski asks Zero, Zero stares blankly and replies: *"I like to dig holes."*
+* **Chapter 13**: Stanley unearths a fossilized fish imprinted on a rock. Excitingly presenting it to Pendanski, he is told the Warden is not interested in fossils. Stanley receives no reward.
+* **Chapter 14**: Stanley discovers a small, engraved gold metal cylinder about the size of a lipstick tube, marked with the letters **"KB"** inside an engraved heart. Remembering X-Ray's seniority and fearing peer rejection, Stanley agrees to give the tube to X-Ray the following morning so X-Ray can get a full day off.
+* **Chapter 15**: The next morning, X-Ray pretends to find the tube in his own hole. Mr. Pendanski immediately contacts the Warden. The Warden arrives in a pickup truck: tall, imposing, with red hair and cowboy boots. She rewards X-Ray with a day off, double canteen rations, and orders the boys to dig outward from X-Ray's hole.
+
+### Character Transformations & Themes
+* **Stanley**: Learns street smarts; recognizes that survival requires navigating peer politics alongside guard brutality.
+* **The Warden**: Revealed as the absolute commander; her sudden appearance exposes that the digging is a deliberate treasure hunt.
+* **Key Motifs**: The gold "KB" tube (Kissin' Kate Barlow); the fossil (ironic contrast between ancient history and modern greed).
+
+### Key Quotes
+* *"I like to dig holes."* — Zero
+* *"You're a good boy, Rex. Take the rest of the day off."* — The Warden
+* *"It was a gold tube, about the size of a travel lipstick container, with 'KB' etched into a heart."*
+
+### High-Yield Exam Questions
+1. **Why does Stanley give the gold tube to X-Ray instead of turning it in himself?**  
+   *Answer*: Because X-Ray is the leader of Tent D, and Stanley realizes that maintaining X-Ray's protection and goodwill is more valuable than one afternoon off.
+2. **What are the initials on the gold tube and who did it belong to?**  
+   *Answer*: "KB", belonging to the 19th-century outlaw Kissin' Kate Barlow.
+
+---
+
+## Module 4: Chapters 16 – 20
+**Focus**: The Concentric Grid Search, Stolen Sunflower Seeds, The Warden's Venomous Nail Polish
+
+### Detailed Plot Synopsis
+* **Chapter 16**: The Warden supervises the digging in person, becoming increasingly impatient and aggressive as the boys find nothing in X-Ray's hole. Stanley knows they are digging in the wrong spot because X-Ray actually found the tube in Stanley's hole.
+* **Chapter 17**: Stanley is accidentally struck in the head by Zigzag's shovel while digging close together in the grid trench. The Warden dismisses the injury and demands faster labor.
+* **Chapter 18**: Stanley writes another cheerful letter to his mother. Zero looks on silently and reveals that he cannot read or write, asking Stanley to teach him. Exhausted and irritable, Stanley refuses: *"I don't have the energy to teach anyone."*
+* **Chapter 19**: While the water truck is parked, Magnet uses his nimble fingers to snatch Mr. Sir's burlap sack of sunflower seeds. When the boys pass it around, the sack spills into Stanley's hole. Mr. Sir returns, catches Stanley with the seeds, and escorts him to the Warden's cabin.
+* **Chapter 20**: In the Warden's luxurious air-conditioned cabin, Mr. Sir presents Stanley's "crime." The Warden dismisses the seeds as trivial and paints her fingernails with dark red polish containing **rattlesnake venom**. When Mr. Sir protests, the Warden viciously claws his face with her wet nails. Mr. Sir collapses in agony as the venom burns his flesh. The Warden coldly orders Stanley to return to his hole.
+
+### Character Transformations & Themes
+* **Stanley**: Witnesses the lethal, lawless nature of the camp administration; develops a hardened survival instinct.
+* **The Warden & Mr. Sir**: The illusion of professional authority is stripped away, revealing sadistic violence and internal tyranny.
+* **Key Motifs**: Rattlesnake venom nail polish; sunflower seeds as a catalyst for injustice; caliche and blood.
+
+### Key Quotes
+* *"It's only toxic while it's wet."* — The Warden
+* *"I don't have the energy to teach anyone."* — Stanley to Zero
+* *"He saw the three red scratches on Mr. Sir's face turn purple and swell."*
+
+### High-Yield Exam Questions
+1. **What secret ingredient makes the Warden's nail polish deadly?**  
+   *Answer*: Fresh rattlesnake venom, which is lethal when wet and causes agonizing chemical burning.
+2. **Why does Stanley take the blame for the stolen sunflower seeds?**  
+   *Answer*: To protect Magnet and preserve the code of silence among the boys of Tent D.
+
+---
+
+## Module 5: Chapters 21 – 25
+**Focus**: The Literacy Pact, Zero Learns the Alphabet, Green Lake 1888, Katherine & Sam
+
+### Detailed Plot Synopsis
+* **Chapter 21**: Stanley returns to his hole and finds that someone has already dug half of it for him: Zero dug his hole as a gesture of gratitude because Stanley didn't rat out the boys over the seeds.
+* **Chapter 22**: That evening, Stanley agrees to teach Zero to read. He realizes Zero is not stupid; Zero possesses lightning-fast mental math abilities and masters the alphabet rapidly. They strike a deal: Zero will dig an hour of Stanley's hole each day, and Stanley will spend an hour tutoring him.
+* **Chapter 23**: Historical flashback to 1888: Green Lake is a flourishing paradise. Schoolteacher Miss Katherine Barlow makes famous spiced peaches that win blue ribbons. Trout Walker, the richest young man in town, aggressively courts her, but she politely rejects him.
+* **Chapter 24**: In the modern era, Mr. Sir's face is swollen and purple from venom. In retaliation for his humiliation, Mr. Sir begins intentionally pouring Stanley's water ration onto the desert sand.
+* **Chapter 25**: Flashback continues: Katherine Barlow hires Sam the Onion Man to fix the schoolhouse roof and windows. Sam sells wild sweet onions grown on his secret mountain patch, which cure every town ailment. Sam and Katherine fall deeply in love while reading poetry together. One rainy afternoon, they kiss in public.
+
+### Character Transformations & Themes
+* **Stanley & Zero**: Move from distant peers to intimate partners; their pact represents mutual aid and solidarity against oppression.
+* **Katherine Barlow & Sam**: A pastoral romance demonstrating racial harmony and natural healing, directly contrasted with modern institutional cruelty.
+* **Key Motifs**: Spiced peaches; sweet onions as medicine; the kiss in the rain; water poured into dirt.
+
+### Key Quotes
+* *"I can fix that."* — Sam the Onion Man
+* *"You're teaching me to read, and I'm digging your hole. It's a trade."* — Zero
+* *"The onions were sweet and juicy, and Sam claimed they could cure anything."*
+
+### High-Yield Exam Questions
+1. **What deal do Stanley and Zero agree upon in Chapter 22?**  
+   *Answer*: Zero will dig one hour of Stanley's hole every day, and Stanley will teach Zero how to read and write for one hour each evening.
+2. **What was Sam's iconic catchphrase when repairing the schoolhouse?**  
+   *Answer*: *"I can fix that."*
+
+---
+
+## Module 6: Chapters 26 – 30
+**Focus**: Sam's Lynching, The Birth of Kissin' Kate, Tent D Mutiny & Zero's Shovel Strike
+
+### Detailed Plot Synopsis
+* **Chapter 26**: The town of Green Lake discovers Sam and Katherine's kiss. Racist outrage erupts. Trout Walker leads a mob to burn down the schoolhouse. When Katherine runs to the Sheriff, he refuses to protect Sam and demands a kiss. Trout's mob captures Sam on his boat *Mary Lou*, shoots him to death, and slaughters his donkey. From that exact day, rain never falls on Green Lake again.
+* **Chapter 27**: Three days later, Katherine Barlow shoots the corrupt Sheriff dead, applies fresh red lipstick, and kisses his dead cheek. Over the next twenty years, she terrorizes Texas as the notorious outlaw **Kissin' Kate Barlow**.
+* **Chapter 28**: In 1898, twenty years later, Kate returns to the dry lakebed. A destitute Trout Walker and his wife Linda corner her at gunpoint, demanding her buried loot. Kate laughs in their faces, is bitten by a yellow-spotted lizard, and dies laughing: *"You and your children can dig for a hundred years and never find it!"*
+* **Chapter 29**: In the modern camp, thunder rumbles in the distant mountains. Stanley spots a strange rock formation on the horizon resembling a giant fist with an upright thumb: **"God's Thumb."** He remembers his great-grandfather claimed to survive in the desert by finding refuge on God's Thumb.
+* **Chapter 30**: Tent D's resentment boils over regarding Zero digging for Stanley. Zigzag brutally assaults Stanley. When Pendanski intervenes, he encourages the fight and humiliates Zero, telling him to spell "dig" and spitting at his feet. Zero strikes Pendanski across the neck with his shovel, knocks Mr. Pendanski unconscious, and flees into the desert wasteland.
+
+### Character Transformations & Themes
+* **Zero**: Reaches his breaking point; rejects psychological annihilation and chooses the desert over submission.
+* **Katherine Barlow**: Transforms from a gentle teacher into an avenging outlaw through societal racism.
+* **Key Motifs**: The yellow-spotted lizard as karmic executioner; God's Thumb; the shovel as a weapon of rebellion.
+
+### Key Quotes
+* *"You and your children and their children can dig for the next hundred years and you will never find it!"* — Kissin' Kate Barlow
+* *"Spit on him, why don't you? Go ahead, Zero, spell 'dig'!"* — Dr. Pendanski
+* *"Zero's shovel swung through the air and caught Pendanski right across the neck."*
+
+### High-Yield Exam Questions
+1. **What tragedy causes the 110-year drought to begin over Green Lake?**  
+   *Answer*: The racist murder of Sam the Onion Man and the slaughter of his donkey Mary Lou by Trout Walker's mob.
+2. **Why does Zero strike Mr. Pendanski with his shovel?**  
+   *Answer*: Because Pendanski publicly mocks his intelligence, tells him he has no brain, and demands he spell words while spitting at him.
+
+---
+
+## Module 7: Chapters 31 – 35
+**Focus**: Erasing Zero's Records, Stanley Steals the Truck, The Wasteland Trek & The Mary Lou
+
+### Detailed Plot Synopsis
+* **Chapter 31**: Stanley is devastated by Zero's escape. The Warden, Mr. Sir, and Dr. Pendanski meet: to avoid a state investigation into a camper's death, they erase all digital and paper records of Hector Zeroni, treating him as though he never existed. Stanley resolves to find him.
+* **Chapter 32**: A new camper, Twitch, arrives to take Zero's cot. When Mr. Sir parks the water truck to fill canteens, Stanley spontaneously jumps behind the wheel to steal it and drive after Zero. In his panic, he puts the truck in reverse, crashes into a hole, jumps out, and flees on foot into the desert with an empty canteen.
+* **Chapter 33**: Stanley walks across the dry lakebed under the scorching sun. He encounters empty holes, animal skeletons, and contemplates turning back, but knows Zero is dying alone.
+* **Chapter 34**: Stanley sees a strange pool of water in the distance, but it proves to be a mirage. Beside it, however, he discovers an overturned wooden boat buried in the sand: the **Mary Lou**, Sam's historical boat from 1888. Beneath the hull, a voice calls out.
+* **Chapter 35**: Stanley crawls beneath the boat and finds Zero alive, but severely dehydrated and weakened. Zero has survived for days on jars of preserved spiced peaches that he calls **"Sploosh."**
+
+### Character Transformations & Themes
+* **Stanley**: Moves from passive follower to active hero; risks his life and commits grand theft auto to save his friend.
+* **Institutional Corruption**: The deletion of Zero's files demonstrates that the penal system prioritizes institutional self-preservation over human life.
+* **Key Motifs**: The *Mary Lou*; Sploosh (110-year-old spiced peaches); mirages vs. physical truth.
+
+### Key Quotes
+* *"If he dies, nobody will know. There is no record of him ever being here."* — The Warden
+* *"He looked at the steering wheel, pushed the pedal, and the truck leaped forward."*
+* *"Sploosh," said Zero, offering the muddy jar. "It tastes like sweet peaches."*
+
+### High-Yield Exam Questions
+1. **What steps does the Warden take to conceal Zero's disappearance?**  
+   *Answer*: She orders Dr. Pendanski to delete all of Hector Zeroni's state files and computerized records from the camp system.
+2. **Where does Stanley find Zero hiding in the desert, and what was he eating?**  
+   *Answer*: Underneath the overturned wooden boat *Mary Lou*, surviving by eating 110-year-old jars of spiced peaches called "Sploosh."
+
+---
+
+## Module 8: Chapters 36 – 40
+**Focus**: Sploosh, The Ascent of God's Thumb, Carrying Zero, Breaking the 110-Year Curse
+
+### Detailed Plot Synopsis
+* **Chapter 36**: Stanley and Zero share the last jar of Sploosh and resolve to walk toward God's Thumb. Zero carries Stanley's shovel with a sack wrapped around the blade. As they walk, Zero suffers violent stomach cramps from the spoiled peaches.
+* **Chapter 37**: The terrain begins sloping upward into the mountains. Weeds and small green insects appear, signaling the proximity of subterranean moisture.
+* **Chapter 38**: The ascent turns steep and rocky. Zero collapses, throwing up blood and bile. Stanley refuses to abandon him: he leaves the shovel, hoists Hector Zeroni onto his shoulders, and carries the unconscious boy up the vertical cliff face.
+* **Chapter 39**: Near the summit, Stanley collapses in a patch of mud. Sniffing the damp earth, he digs frantic handfuls of mud and discovers a trickling pool of fresh water! In the mud, he unearths an enormous wild onion. Stanley drinks, feeds Zero the water, feeds him chunks of the onion, and sings the family lullaby (*"If only, if only..."*). Unbeknownst to Stanley, he has just carried Madame Zeroni's descendant up the mountain, given him water, and sung the song: **the curse of Elya Yelnats is broken.**
+* **Chapter 40**: Stanley and Zero rest for two days on God's Thumb, subsisting entirely on fresh stream water and raw wild onions. Zero's strength slowly returns.
+
+### Character Transformations & Themes
+* **Stanley**: Reaches the absolute peak of moral and physical heroism; fulfills the ancestral debt not through magic, but through self-sacrificial love.
+* **Breaking the Curse**: Karmic reconciliation occurs when human compassion triumphs over historical neglect.
+* **Key Motifs**: God's Thumb; wild sweet onions; freshwater mountain stream; the pig lullaby.
+
+### Key Quotes
+* *"He picked up Zero, hoisted him across his shoulders, and began to climb."*
+* *"It smelled like onions... hot, sweet, pungent onions."*
+* *"For the first time in his life, Stanley felt happy with who he was."*
+
+### High-Yield Exam Questions
+1. **What three actions does Stanley perform atop God's Thumb that mirror Madame Zeroni's ancient instructions?**  
+   *Answer*: 1) He carries Hector Zeroni up the mountain; 2) He gives him water from the mountain stream; 3) He sings the ancestral lullaby to him.
+2. **What food sustains the boys atop God's Thumb?**  
+   *Answer*: Wild sweet onions from Sam's historical mountain patch.
+
+---
+
+## Module 9: Chapters 41 – 45
+**Focus**: Mountain Confessions, Night Infiltration, Digging the Hole, The Lizard Pit Trap
+
+### Detailed Plot Synopsis
+* **Chapter 41**: Stanley climbs back down the cliff to retrieve the shovel and brings back more onions. Zero's fever breaks, and he confesses the truth: he was the one who stole Clyde Livingston's sneakers from the homeless shelter because he needed shoes. Stanley forgives him immediately.
+* **Chapter 42**: The boys realize they cannot live on the mountain forever. Stanley devises a bold plan: sneak back into Camp Green Lake at night, dig in the hole where he found the gold KB tube, unearth Kate Barlow's buried treasure, and use the money to escape.
+* **Chapter 43**: Stanley and Zero hike back across the desert under cover of darkness, carrying canteens filled with water and onions stuffed in their pockets. They arrive at the camp perimeter at 2:00 AM.
+* **Chapter 44**: Zero sneaks into the camp kitchen to steal water and cereal boxes. Meanwhile, Stanley climbs into his original hole and begins excavating. His shovel strikes something hard and metallic: a large metal suitcase buried deep in the dirt.
+* **Chapter 45**: As Stanley and Zero lift the heavy metal suitcase from the mud, beams of flashlights pierce the darkness. The Warden, Mr. Sir, and Dr. Pendanski surround the hole. But none of the adults step forward: a nest of deadly **yellow-spotted lizards** has emerged, crawling across the suitcase and over Stanley and Zero's bare arms, legs, and throats. The Warden smiles cruelly: *"Now we just have to wait."*
+
+### Character Transformations & Themes
+* **Zero's Confession**: Total vulnerability between the boys eliminates the final barrier of guilt, cementing their unbreakable brotherhood.
+* **The Climax of Greed**: The adults' cowardice and greed are laid bare as they stand by, waiting for the deadly lizards to kill the children.
+* **Key Motifs**: The metal suitcase; yellow-spotted lizards; onion scent as natural armor.
+
+### Key Quotes
+* *"I took them," Zero said softly. "I'm the one who stole the sneakers."*
+* *"We just have to wait until the lizards finish with them."* — The Warden
+* *"A yellow-spotted lizard was resting on Stanley's neck, its black tongue flickering."*
+
+### High-Yield Exam Questions
+1. **Why does Zero confess to stealing the sneakers?**  
+   *Answer*: Because his deep friendship and moral debt to Stanley make it impossible to hide the truth any longer.
+2. **Why do the yellow-spotted lizards fail to bite Stanley and Zero in the hole?**  
+   *Answer*: Because the boys have eaten nothing but wild onions for a week, and lizards detest the smell and taste of onion blood.
+
+---
+
+## Module 10: Chapters 46 – 50
+**Focus**: The Dawn Standoff, Legal Exoneration, The STANLEY YELNATS Chest, The Rains & Epilogue
+
+### Detailed Plot Synopsis
+* **Chapter 46**: The standoff lasts through the night. The Warden fabricates a lie to tell the authorities: claiming the boys broke into her cabin, stole her suitcase, and fell into the lizard nest. At dawn, a luxury sedan pulls into the camp.
+* **Chapter 47**: Stanley's lawyer, Ms. Carla Morengo, and the Texas Attorney General emerge from the car with a court order demanding Stanley's immediate release (Derrick Dunne's confession proved Stanley's alibi). Seeing the boys covered in lizards, Ms. Morengo demands action. Stanley slowly stands and climbs out of the hole, unharmed. The lizards crawl away back into the darkness.
+* **Chapter 48**: The Warden claims the suitcase belongs to her family. Zero speaks up and reads the faded print on the leather lid: **STANLEY YELNATS**. It belonged to Stanley's great-grandfather! Ms. Morengo prevents the Warden from taking it. When Pendanski refuses to let Zero leave, the Attorney General checks the state computer: because the camp erased all of Zero's records, the state has no legal authority to detain him. Zero walks free with Stanley.
+* **Chapter 49**: Flashback explains the science: yellow-spotted lizards hate onion blood, which saved Sam and saved the boys. As the car drives away from Camp Green Lake, rain begins falling from the sky for the first time in 110 years.
+* **Chapter 50 (Epilogue)**: Camp Green Lake is closed permanently and purchased by the Girl Scouts of America. The suitcase yields nearly $1 million in stocks and jewelry, giving each boy close to $500,000. Stanley buys his family a home; his father invents a successful peach-and-onion foot spray named **"Sploosh,"** endorsed by Clyde Livingston. Hector uses his fortune to hire private investigators, successfully finding his mother, who sings the final verse of the lullaby to him at the victory party.
+
+### Character Transformations & Themes
+* **Full Circle Closure**: The palindrome of history resolves: generational justice, economic prosperity, racial reunion, and environmental regeneration occur simultaneously.
+* **The Return of Rain**: Symbolizes total moral and ecological renewal over Green Lake.
+* **Key Motifs**: The rain; the inscribed suitcase; the final stanza of the lullaby.
+
+### Key Quotes
+* *"STANLEY YELNATS," read Zero. "It has your name on it."*
+* *"For the first time in over a hundred years, a drop of rain fell upon the dry lakebed of Green Lake."*
+* *"The woodpecker sighs / The bark on the tree was as soft as the skies / But now that you're here / The sky is so clear..."*
+
+### High-Yield Exam Questions
+1. **How is the ownership of the metal suitcase legally established?**  
+   *Answer*: The name "STANLEY YELNATS" is etched on the lid, proving it belonged to Stanley's great-grandfather, who was robbed by Kissin' Kate Barlow in 1888.
+2. **What occurs environmentally at Camp Green Lake the moment Stanley and Zero leave?**  
+   *Answer*: The 110-year drought ends as rain finally falls over Green Lake.
+"""
+
+def generate_html(md_content):
+    # A standalone, high-contrast, print-optimized HTML page
+    import html
+    
+    # Simple markdown parser for headers, lists, blockquotes, tables, bold, italic
+    lines = md_content.split('\n')
+    html_lines = []
+    in_table = False
+    table_has_header = False
+    
+    for line in lines:
+        stripped = line.strip()
+        
+        # Table handling
+        if stripped.startswith('|') and stripped.endswith('|'):
+            cells = [c.strip() for c in stripped.split('|')[1:-1]]
+            if re.match(r'^[|\s:-]+$', stripped):
+                # separator line
+                continue
+            if not in_table:
+                html_lines.append('<div class="table-container"><table class="print-table">')
+                html_lines.append('<thead><tr>' + ''.join(f'<th>{html.escape(c)}</th>' for c in cells) + '</tr></thead><tbody>')
+                in_table = True
+            else:
+                html_lines.append('<tr>' + ''.join(f'<td>{html.escape(c)}</td>' for c in cells) + '</tr>')
+            continue
+        elif in_table:
+            html_lines.append('</tbody></table></div>')
+            in_table = False
+            
+        if stripped.startswith('# '):
+            html_lines.append(f'<h1 class="doc-h1">{html.escape(stripped[2:])}</h1>')
+        elif stripped.startswith('## '):
+            html_lines.append(f'<h2 class="doc-h2">{html.escape(stripped[3:])}</h2>')
+        elif stripped.startswith('### '):
+            html_lines.append(f'<h3 class="doc-h3">{html.escape(stripped[4:])}</h3>')
+        elif stripped.startswith('#### '):
+            html_lines.append(f'<h4 class="doc-h4">{html.escape(stripped[5:])}</h4>')
+        elif stripped.startswith('> '):
+            html_lines.append(f'<blockquote class="print-quote">{html.escape(stripped[2:])}</blockquote>')
+        elif stripped.startswith('* ') or stripped.startswith('- '):
+            item = stripped[2:]
+            # formatting bold and italic
+            item = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', item)
+            item = re.sub(r'\*(.*?)\*', r'<em>\1</em>', item)
+            html_lines.append(f'<li class="print-li">{item}</li>')
+        elif stripped.startswith('---'):
+            html_lines.append('<hr class="print-hr"/>')
+        elif stripped == '':
+            html_lines.append('<div class="spacer"></div>')
+        else:
+            text = stripped
+            text = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', text)
+            text = re.sub(r'\*(.*?)\*', r'<em>\1</em>', text)
+            html_lines.append(f'<p class="print-p">{text}</p>')
+            
+    if in_table:
+        html_lines.append('</tbody></table></div>')
+        
+    body_html = '\n'.join(html_lines)
+    
+    full_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holes (Louis Sachar) — Printable Master Character Sheet & Syllabus</title>
+  <style>
+    /* CSS Reset & Variables for Print & Screen */
+    :root {{
+      --primary-color: #0f172a;
+      --accent-color: #b45309;
+      --accent-bg: #fef3c7;
+      --border-color: #cbd5e1;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+    }}
+    
+    * {{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }}
+    
+    body {{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-main);
+      background-color: var(--bg-page);
+      padding: 20px 0;
+    }}
+    
+    .print-bar {{
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #1e293b;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+      margin-bottom: 24px;
+    }}
+    
+    .print-bar h2 {{
+      font-size: 1.1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }}
+    
+    .print-actions {{
+      display: flex;
+      gap: 12px;
+    }}
+    
+    .btn {{
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }}
+    
+    .btn-print {{
+      background: #f59e0b;
+      color: #0f172a;
+    }}
+    .btn-print:hover {{
+      background: #d97706;
+    }}
+    
+    .btn-back {{
+      background: #334155;
+      color: #f8fafc;
+    }}
+    .btn-back:hover {{
+      background: #475569;
+    }}
+    
+    .sheet-container {{
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      padding: 48px;
+      border-radius: 8px;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05), 0 4px 6px -2px rgba(0,0,0,0.02);
+      border: 1px solid var(--border-color);
+    }}
+    
+    .doc-h1 {{
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #0f172a;
+      border-bottom: 3px solid #f59e0b;
+      padding-bottom: 12px;
+      margin-bottom: 18px;
+    }}
+    
+    .doc-h2 {{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-top: 36px;
+      margin-bottom: 14px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--border-color);
+      page-break-after: avoid;
+    }}
+    
+    .doc-h3 {{
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #b45309;
+      margin-top: 24px;
+      margin-bottom: 8px;
+      page-break-after: avoid;
+    }}
+    
+    .doc-h4 {{
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #334155;
+      margin-top: 14px;
+      margin-bottom: 6px;
+      page-break-after: avoid;
+    }}
+    
+    .print-p {{
+      font-size: 0.96rem;
+      margin-bottom: 12px;
+      color: #334155;
+    }}
+    
+    .print-li {{
+      font-size: 0.94rem;
+      margin-left: 24px;
+      margin-bottom: 6px;
+      color: #334155;
+    }}
+    
+    .print-quote {{
+      background: var(--accent-bg);
+      border-left: 4px solid var(--accent-color);
+      padding: 12px 18px;
+      margin: 16px 0;
+      font-style: italic;
+      color: #78350f;
+      border-radius: 0 6px 6px 0;
+    }}
+    
+    .print-hr {{
+      border: 0;
+      height: 1px;
+      background: var(--border-color);
+      margin: 28px 0;
+    }}
+    
+    .spacer {{
+      height: 10px;
+    }}
+    
+    .table-container {{
+      overflow-x: auto;
+      margin: 20px 0;
+    }}
+    
+    .print-table {{
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+      text-align: left;
+    }}
+    
+    .print-table th {{
+      background: #f1f5f9;
+      color: #0f172a;
+      font-weight: 700;
+      padding: 10px 12px;
+      border: 1px solid var(--border-color);
+    }}
+    
+    .print-table td {{
+      padding: 8px 12px;
+      border: 1px solid var(--border-color);
+      vertical-align: top;
+      color: #334155;
+    }}
+    
+    .print-table tr:nth-child(even) {{
+      background: #f8fafc;
+    }}
+    
+    /* PRINT MEDIA SPECIFICATIONS */
+    @media print {{
+      body {{
+        background: #ffffff !important;
+        padding: 0 !important;
+        font-size: 10pt;
+      }}
+      .print-bar {{
+        display: none !important;
+      }}
+      .sheet-container {{
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+      }}
+      .doc-h1 {{
+        font-size: 18pt !important;
+      }}
+      .doc-h2 {{
+        font-size: 14pt !important;
+        page-break-before: always;
+      }}
+      .doc-h3 {{
+        font-size: 12pt !important;
+        page-break-after: avoid;
+      }}
+      .print-table {{
+        font-size: 8pt !important;
+      }}
+      @page {{
+        margin: 1.5cm;
+      }}
+    }}
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Print Bar (Hidden during actual print) -->
+  <div class="print-bar">
+    <h2><span>🕳️</span> Holes Literature Exam Master — Printable Study Suite</h2>
+    <div class="print-actions">
+      <a href="index.html" class="btn btn-back">◀ Back to App</a>
+      <button onclick="window.print()" class="btn btn-print">🖨️ Print / Save as PDF</button>
+    </div>
+  </div>
+
+  <main class="sheet-container">
+    {body_html}
+  </main>
+
+</body>
+</html>
+"""
+    return full_html
+
+def main():
+    print("[1/4] Generating Character Sheets...")
+    char_md = get_character_sheets_md()
+    
+    print("[2/4] Generating Master Summary...")
+    master_md = get_master_summary_md()
+    
+    print("[3/4] Generating 5-Chapter Grouped Summaries...")
+    chaps_md = get_chapter_summaries_md()
+    
+    full_md = char_md + "\n\n---\n\n" + master_md + "\n\n---\n\n" + chaps_md
+    
+    # Strip markdown tags for clean txt
+    txt_content = re.sub(r'#+\s+', '', full_md)
+    txt_content = re.sub(r'\*\*(.*?)\*\*', r'\1', txt_content)
+    txt_content = re.sub(r'\*(.*?)\*', r'\1', txt_content)
+    
+    # Paths
+    md_path = os.path.join(DOCS_DIR, "10_Printable_Character_Sheets_and_Master_Summaries.md")
+    txt_path = os.path.join(DOCS_DIR, "10_Printable_Character_Sheets_and_Master_Summaries.txt")
+    html_path = os.path.join(CLIENT_DIR, "printable_study_sheet.html")
+    
+    print(f"[4/4] Writing output files:")
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write(full_md)
+    print(f"  -> Created: {md_path} ({len(full_md)} chars)")
+    
+    with open(txt_path, "w", encoding="utf-8") as f:
+        f.write(txt_content)
+    print(f"  -> Created: {txt_path} ({len(txt_content)} chars)")
+    
+    html_content = generate_html(full_md)
+    with open(html_path, "w", encoding="utf-8") as f:
+        f.write(html_content)
+    print(f"  -> Created: {html_path} ({len(html_content)} chars)")
+    
+    print("\n[SUCCESS] Printable Study Suite successfully generated!")
+
+if __name__ == "__main__":
+    main()
